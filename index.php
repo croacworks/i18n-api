@@ -46,6 +46,25 @@ function response(mixed $data, int $status = 200): never
     exit;
 }
 
+function authorizationHeader(): string
+{
+    // Apache/Nginx/FPM may expose Authorization through different variables.
+    foreach (['HTTP_AUTHORIZATION', 'REDIRECT_HTTP_AUTHORIZATION', 'Authorization'] as $serverKey) {
+        if (!empty($_SERVER[$serverKey])) {
+            return trim((string) $_SERVER[$serverKey]);
+        }
+    }
+
+    if (function_exists('getallheaders')) {
+        $headers = array_change_key_case(getallheaders(), CASE_LOWER);
+        if (!empty($headers['authorization'])) {
+            return trim((string) $headers['authorization']);
+        }
+    }
+
+    return '';
+}
+
 function normalizeLanguage(string $language): string
 {
     return str_replace('_', '-', trim($language));
@@ -679,8 +698,7 @@ if ($method === 'POST' && in_array($path, ['/api/login', '/api/auth/login'], tru
 if ($apiToken === '') {
     response(['error' => 'API token is not configured.'], 500);
 }
-$headers = array_change_key_case(function_exists('getallheaders') ? getallheaders() : [], CASE_LOWER);
-$authHeader = $headers['authorization'] ?? '';
+$authHeader = authorizationHeader();
 if (!preg_match('/^Bearer\s+(.+)$/i', (string) $authHeader, $matches)) {
     response(['error' => 'Unauthorized'], 401);
 }

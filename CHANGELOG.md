@@ -12,6 +12,7 @@
 - Existing databases are no longer reseeded automatically on every container restart.
 - Added CoreUI light, dark and system theme selection with browser persistence.
 - Added an administrator Git updater with encrypted GitHub fine-grained token storage, HTTPS-only remotes, fast-forward-only updates and dirty-tree protection.
+- Made Bearer authentication compatible with Apache/Nginx/FPM forwarding variants of the `Authorization` header.
 
 ## Batch translation push — 2026-08-25
 
