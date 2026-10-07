@@ -1,6 +1,9 @@
 services:
   api:
-    image: php:8.4-cli-alpine
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: i18n-api:latest
     container_name: i18n-api-server
     restart: always
     volumes:

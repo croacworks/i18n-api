@@ -75,6 +75,11 @@ function ensureSchema(PDO $pdo): void
         role TEXT NOT NULL DEFAULT 'user' CHECK(role IN ('admin', 'user')),
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     )");
+    $pdo->exec("CREATE TABLE IF NOT EXISTS app_settings (
+        setting_key TEXT PRIMARY KEY,
+        setting_value TEXT NOT NULL,
+        updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    )");
 
     $columns = $pdo->query('PRAGMA table_info(users)')->fetchAll(PDO::FETCH_ASSOC);
     $hasRole = false;
@@ -87,6 +92,240 @@ function ensureSchema(PDO $pdo): void
     if (!$hasRole) {
         // Existing installations had full access before roles existed.
         $pdo->exec("ALTER TABLE users ADD COLUMN role TEXT NOT NULL DEFAULT 'admin' CHECK(role IN ('admin', 'user'))");
+    }
+}
+
+function updaterEncryptionKey(): string
+{
+    $secret = trim((string) (getenv('I18N_UPDATER_ENCRYPTION_KEY') ?: getenv('I18N_API_TOKEN')));
+    if ($secret === '') {
+        throw new RuntimeException('I18N_API_TOKEN or I18N_UPDATER_ENCRYPTION_KEY must be configured.');
+    }
+    return hash('sha256', 'i18n-updater-key|' . $secret, true);
+}
+
+function encryptUpdaterValue(string $value): string
+{
+    $iv = random_bytes(12);
+    $tag = '';
+    $encrypted = openssl_encrypt($value, 'aes-256-gcm', updaterEncryptionKey(), OPENSSL_RAW_DATA, $iv, $tag);
+    if ($encrypted === false) {
+        throw new RuntimeException('Could not encrypt updater settings.');
+    }
+    return base64_encode($iv . $tag . $encrypted);
+}
+
+function decryptUpdaterValue(string $value): string
+{
+    $decoded = base64_decode($value, true);
+    if ($decoded === false || strlen($decoded) < 28) {
+        throw new RuntimeException('Stored updater key is invalid.');
+    }
+    $iv = substr($decoded, 0, 12);
+    $tag = substr($decoded, 12, 16);
+    $encrypted = substr($decoded, 28);
+    $decrypted = openssl_decrypt($encrypted, 'aes-256-gcm', updaterEncryptionKey(), OPENSSL_RAW_DATA, $iv, $tag);
+    if ($decrypted === false) {
+        throw new RuntimeException('Could not decrypt updater settings. Check the encryption key.');
+    }
+    return $decrypted;
+}
+
+function updaterSetting(PDO $pdo, string $key): ?string
+{
+    $stmt = $pdo->prepare('SELECT setting_value FROM app_settings WHERE setting_key = :key');
+    $stmt->execute(['key' => $key]);
+    $value = $stmt->fetchColumn();
+    return $value === false ? null : (string) $value;
+}
+
+function saveUpdaterSetting(PDO $pdo, string $key, string $value): void
+{
+    $stmt = $pdo->prepare('INSERT INTO app_settings (setting_key, setting_value, updated_at) VALUES (:key, :value, CURRENT_TIMESTAMP)
+        ON CONFLICT(setting_key) DO UPDATE SET setting_value = excluded.setting_value, updated_at = CURRENT_TIMESTAMP');
+    $stmt->execute(['key' => $key, 'value' => $value]);
+}
+
+function updaterPrivateKey(PDO $pdo): ?string
+{
+    $encrypted = updaterSetting($pdo, 'updater_private_key');
+    if ($encrypted === null || $encrypted === '') {
+        return null;
+    }
+    return decryptUpdaterValue($encrypted);
+}
+
+function runGitCommand(string $baseDir, array $arguments, array $environment = []): array
+{
+    $commandParts = ['git', '-C', $baseDir];
+    foreach ($arguments as $argument) {
+        $commandParts[] = (string) $argument;
+    }
+    $command = implode(' ', array_map('escapeshellarg', $commandParts));
+    $descriptors = [1 => ['pipe', 'w'], 2 => ['pipe', 'w']];
+    $environment = array_merge($_ENV, [
+        'PATH' => getenv('PATH') ?: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+        'GIT_TERMINAL_PROMPT' => '0',
+        'GIT_CONFIG_COUNT' => '1',
+        'GIT_CONFIG_KEY_0' => 'safe.directory',
+        'GIT_CONFIG_VALUE_0' => $baseDir,
+    ], $environment);
+    $process = proc_open($command, $descriptors, $pipes, $baseDir, $environment);
+    if (!is_resource($process)) {
+        return ['exit_code' => 1, 'stdout' => '', 'stderr' => 'Could not start git.'];
+    }
+    $stdout = stream_get_contents($pipes[1]);
+    $stderr = stream_get_contents($pipes[2]);
+    fclose($pipes[1]);
+    fclose($pipes[2]);
+    $exitCode = proc_close($process);
+    return ['exit_code' => $exitCode, 'stdout' => trim((string) $stdout), 'stderr' => trim((string) $stderr)];
+}
+
+function gitOutput(string $baseDir, array $arguments, array $environment = []): string
+{
+    $result = runGitCommand($baseDir, $arguments, $environment);
+    if ($result['exit_code'] !== 0) {
+        throw new RuntimeException($result['stderr'] ?: $result['stdout'] ?: 'Git command failed.');
+    }
+    return $result['stdout'];
+}
+
+function updaterConfig(PDO $pdo, string $baseDir): array
+{
+    $repository = updaterSetting($pdo, 'updater_repository');
+    if ($repository === null) {
+        $remote = runGitCommand($baseDir, ['remote', 'get-url', 'origin']);
+        $repository = $remote['exit_code'] === 0 ? $remote['stdout'] : '';
+    }
+    $branch = updaterSetting($pdo, 'updater_branch');
+    if ($branch === null || $branch === '') {
+        $currentBranch = runGitCommand($baseDir, ['rev-parse', '--abbrev-ref', 'HEAD']);
+        $branch = $currentBranch['exit_code'] === 0 ? $currentBranch['stdout'] : 'main';
+    }
+    return ['repository' => $repository, 'branch' => $branch, 'key_configured' => updaterSetting($pdo, 'updater_private_key') !== null];
+}
+
+function validateUpdaterRepository(string $repository): bool
+{
+    return strlen($repository) <= 255
+        && !str_contains($repository, "\n")
+        && preg_match('#^(git@[^:\s]+:[^\s]+|ssh://[^\s]+|https?://[^\s]+)$#', $repository) === 1;
+}
+
+function validateUpdaterBranch(string $branch): bool
+{
+    return preg_match('#^[A-Za-z0-9._/-]{1,100}$#', $branch) === 1 && !str_starts_with($branch, '-');
+}
+
+function updaterSshEnvironment(string $privateKey): array
+{
+    if (!str_contains($privateKey, 'PRIVATE KEY')) {
+        throw new InvalidArgumentException('The private key does not look like a valid SSH private key.');
+    }
+    $keyPath = tempnam(sys_get_temp_dir(), 'i18n-ssh-');
+    if ($keyPath === false || file_put_contents($keyPath, rtrim($privateKey) . "\n") === false) {
+        throw new RuntimeException('Could not stage the SSH private key.');
+    }
+    chmod($keyPath, 0600);
+    return [
+        'GIT_SSH_COMMAND' => 'ssh -i ' . escapeshellarg($keyPath) . ' -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=accept-new -o ConnectTimeout=15',
+        'I18N_UPDATER_KEY_PATH' => $keyPath,
+    ];
+}
+
+function removeUpdaterKey(array $environment): void
+{
+    if (!empty($environment['I18N_UPDATER_KEY_PATH'])) {
+        @unlink($environment['I18N_UPDATER_KEY_PATH']);
+    }
+}
+
+function syncUpdaterRemote(PDO $pdo, string $baseDir, string $repository): void
+{
+    $remote = runGitCommand($baseDir, ['remote', 'get-url', 'origin']);
+    if ($remote['exit_code'] !== 0) {
+        gitOutput($baseDir, ['remote', 'add', 'origin', $repository]);
+    } elseif (trim($remote['stdout']) !== $repository) {
+        gitOutput($baseDir, ['remote', 'set-url', 'origin', $repository]);
+    }
+}
+
+function updaterStatus(PDO $pdo, string $baseDir): array
+{
+    $config = updaterConfig($pdo, $baseDir);
+    $commit = runGitCommand($baseDir, ['rev-parse', '--short', 'HEAD']);
+    $branch = runGitCommand($baseDir, ['rev-parse', '--abbrev-ref', 'HEAD']);
+    $dirty = runGitCommand($baseDir, ['status', '--porcelain', '--untracked-files=all']);
+    return [
+        'repository' => $config['repository'],
+        'branch' => $branch['exit_code'] === 0 ? $branch['stdout'] : $config['branch'],
+        'configured_branch' => $config['branch'],
+        'commit' => $commit['exit_code'] === 0 ? $commit['stdout'] : null,
+        'key_configured' => $config['key_configured'],
+        'dirty' => $dirty['exit_code'] === 0 && $dirty['stdout'] !== '',
+        'changes' => $dirty['exit_code'] === 0 ? $dirty['stdout'] : '',
+        'ahead' => null,
+        'behind' => null,
+    ];
+}
+
+function checkUpdater(PDO $pdo, string $baseDir): array
+{
+    $config = updaterConfig($pdo, $baseDir);
+    if (!$config['key_configured']) {
+        throw new RuntimeException('Configure the SSH private key before checking for updates.');
+    }
+    if (!validateUpdaterRepository($config['repository'])) {
+        throw new RuntimeException('Configure a valid SSH or HTTPS Git repository URL.');
+    }
+    if (!validateUpdaterBranch($config['branch'])) {
+        throw new RuntimeException('Configure a valid Git branch.');
+    }
+    $environment = updaterSshEnvironment(updaterPrivateKey($pdo) ?? '');
+    try {
+        syncUpdaterRemote($pdo, $baseDir, $config['repository']);
+        $fetch = runGitCommand($baseDir, ['fetch', '--prune', 'origin', $config['branch']], $environment);
+        if ($fetch['exit_code'] !== 0) {
+            throw new RuntimeException($fetch['stderr'] ?: 'Could not fetch the configured Git branch.');
+        }
+        $counts = gitOutput($baseDir, ['rev-list', '--left-right', '--count', 'HEAD...origin/' . $config['branch']]);
+        $parts = preg_split('/\s+/', trim($counts));
+        $status = updaterStatus($pdo, $baseDir);
+        if ($status['branch'] !== $config['branch']) {
+            throw new RuntimeException("The checked out branch '{$status['branch']}' does not match the configured branch '{$config['branch']}'.");
+        }
+        $status['ahead'] = (int) ($parts[0] ?? 0);
+        $status['behind'] = (int) ($parts[1] ?? 0);
+        $status['remote_commit'] = gitOutput($baseDir, ['rev-parse', '--short', 'origin/' . $config['branch']]);
+        return $status;
+    } finally {
+        removeUpdaterKey($environment);
+    }
+}
+
+function updateApplication(PDO $pdo, string $baseDir): array
+{
+    $status = checkUpdater($pdo, $baseDir);
+    if ($status['dirty']) {
+        throw new RuntimeException('Update blocked because the working tree has local changes.');
+    }
+    if ((int) $status['behind'] === 0) {
+        $status['updated'] = false;
+        return $status;
+    }
+    $environment = updaterSshEnvironment(updaterPrivateKey($pdo) ?? '');
+    try {
+        $pull = runGitCommand($baseDir, ['pull', '--ff-only', 'origin', $status['configured_branch']], $environment);
+        if ($pull['exit_code'] !== 0) {
+            throw new RuntimeException($pull['stderr'] ?: $pull['stdout'] ?: 'Could not update the application.');
+        }
+        $status['updated'] = true;
+        $status['output'] = $pull['stdout'];
+        $status['commit'] = gitOutput($baseDir, ['rev-parse', '--short', 'HEAD']);
+        return $status;
+    } finally {
+        removeUpdaterKey($environment);
     }
 }
 
@@ -429,6 +668,63 @@ $providedToken = trim($matches[1]);
 $currentUser = hash_equals($apiToken, $providedToken) ? ['role' => 'admin', 'username' => 'token'] : parseUserToken($providedToken, $apiToken, $pdo);
 if (!$currentUser) {
     response(['error' => 'Unauthorized'], 401);
+}
+
+if ($method === 'GET' && $path === '/api/updater/status') {
+    requireAdmin($currentUser);
+    try {
+        response(['success' => true, 'status' => updaterStatus($pdo, __DIR__)]);
+    } catch (Throwable $e) {
+        response(['error' => $e->getMessage()], 500);
+    }
+}
+
+if ($method === 'POST' && $path === '/api/updater/config') {
+    requireAdmin($currentUser);
+    $data = readJsonBody();
+    $repository = trim((string) ($data['repository'] ?? ''));
+    $branch = trim((string) ($data['branch'] ?? 'main'));
+    $privateKey = trim((string) ($data['private_key'] ?? ''));
+    if (!validateUpdaterRepository($repository) || !validateUpdaterBranch($branch)) {
+        response(['error' => 'Repository must be an SSH/HTTPS Git URL and branch must be valid.'], 400);
+    }
+    if ($privateKey === '' && updaterSetting($pdo, 'updater_private_key') === null) {
+        response(['error' => 'A private SSH key is required for the first configuration.'], 400);
+    }
+    if (strlen($privateKey) > 20000) {
+        response(['error' => 'The private key is too large.'], 400);
+    }
+    if ($privateKey !== '' && !str_contains($privateKey, 'PRIVATE KEY')) {
+        response(['error' => 'The private key does not look like a valid SSH private key.'], 400);
+    }
+    try {
+        saveUpdaterSetting($pdo, 'updater_repository', $repository);
+        saveUpdaterSetting($pdo, 'updater_branch', $branch);
+        if ($privateKey !== '') {
+            saveUpdaterSetting($pdo, 'updater_private_key', encryptUpdaterValue($privateKey));
+        }
+        response(['success' => true, 'config' => updaterConfig($pdo, __DIR__)], 200);
+    } catch (Throwable $e) {
+        response(['error' => $e->getMessage()], 400);
+    }
+}
+
+if ($method === 'POST' && $path === '/api/updater/check') {
+    requireAdmin($currentUser);
+    try {
+        response(['success' => true, 'status' => checkUpdater($pdo, __DIR__)]);
+    } catch (Throwable $e) {
+        response(['error' => $e->getMessage()], 400);
+    }
+}
+
+if ($method === 'POST' && $path === '/api/updater/update') {
+    requireAdmin($currentUser);
+    try {
+        response(['success' => true, 'status' => updateApplication($pdo, __DIR__)]);
+    } catch (Throwable $e) {
+        response(['error' => $e->getMessage()], 409);
+    }
 }
 
 if ($method === 'GET' && $path === '/api/backups') {

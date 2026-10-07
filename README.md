@@ -27,7 +27,7 @@ A microservice acting as a centralized source of truth for i18n translation keys
    ```
 2. Start the service:
    ```bash
-   docker compose up -d
+   docker compose up -d --build
    ```
    The API will be available at `http://localhost:8008`.
 
@@ -203,6 +203,18 @@ Copy the generated archive to storage outside the application directory before r
 checkout. After cloning the new Git repository, place the archive in its `backups/` directory and
 restore it before normal use. The container entrypoint seeds only when `database.sqlite` does not
 exist, so a restored database is not overwritten by the CSV shipped in the new repository.
+
+### Application updater
+
+The administrator interface has an **Atualizações** screen. Configure the repository URL, branch
+and a deploy SSH private key, then use **Verificar atualizações** or **Atualizar aplicação**.
+The updater stores the private key encrypted in `app_settings`, refuses to update a dirty working
+tree and uses `git pull --ff-only`; it never resets or discards local changes. Git and OpenSSH are
+installed in the API image by [Dockerfile](Dockerfile).
+
+For stable encryption across API-token rotations, optionally define `I18N_UPDATER_ENCRYPTION_KEY`
+in `.env`. If omitted, the API token is used as the encryption secret, so changing the API token
+requires saving the updater configuration again.
 
 ---
 
