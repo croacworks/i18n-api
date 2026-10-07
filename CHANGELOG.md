@@ -11,7 +11,7 @@
 - Added complete `.tar.gz` backup/restore routines for the CLI and administrator panel.
 - Existing databases are no longer reseeded automatically on every container restart.
 - Added CoreUI light, dark and system theme selection with browser persistence.
-- Added an administrator Git updater with encrypted deploy-key storage, fast-forward-only updates and dirty-tree protection.
+- Added an administrator Git updater with encrypted GitHub fine-grained token storage, HTTPS-only remotes, fast-forward-only updates and dirty-tree protection.
 
 ## Batch translation push — 2026-08-25
 
