@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Reinforce non-indexing for compliant crawlers
+Noindex: /

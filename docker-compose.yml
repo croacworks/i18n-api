@@ -1,0 +1,37 @@
+services:
+  api:
+    image: php:8.4-cli-alpine
+    container_name: i18n-api-server
+    restart: always
+    volumes:
+      - ./:/app
+    working_dir: /app
+    entrypoint: ["/bin/sh", "/app/entrypoint.sh"]
+    command: php -S 0.0.0.0:80 index.php
+    networks:
+      - web_public
+      - internal
+    tty: true
+
+  libretranslate:
+    image: libretranslate/libretranslate:latest
+    container_name: i18n-libretranslate
+    restart: always
+    volumes:
+      - lt-local:/home/libretranslate/.local
+    environment:
+      - LT_UPDATE_MODELS=true
+      - LT_LOAD_ONLY=en,pt,es
+    networks:
+      - web_public
+      - internal
+
+networks:
+  web_public:
+    external: true
+  internal:
+    driver: bridge
+    internal: true
+
+volumes:
+  lt-local:

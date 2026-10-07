@@ -1,0 +1,1298 @@
+category,message,translation_es,translation_pt-BR
+app,"Hello World",Autenticación,"Olá Mundo"
+app,Auth,Autenticación,Autenticação
+app,Description,Descripción,Descrição
+app,Address,Dirección,Endereço
+app,"Bussines Name","Nombre de la empresa","Nome empresarial"
+app,Configurations,Configuraciones,Configurações
+app,"Postal Code","Código postal",CEP
+app,"Enable LDAP Login","Habilitar inicio de sesión LDAP","Habilitar login via LDAP"
+app,"Enable Recaptcha Login","Habilitar inicio de sesión con reCAPTCHA","Habilitar reCAPTCHA no login"
+app,"Recaptcha Secret Key","Clave secreta de reCAPTCHA","Chave secreta do reCAPTCHA"
+app,"Recaptcha Secret Site Key","Clave del sitio secreta de reCAPTCHA","Chave do site do reCAPTCHA"
+app,"This item is currently in use.","Este elemento está actualmente en uso.","Este item está em uso no momento."
+app,Alert!,¡Alerta!,Alerta!
+app,User,Usuario,Usuário
+app,Users,Usuarios,Usuários
+app,"User Name","Nombre de usuario","Nome de usuário"
+app,"Display Name","Nombre para mostrar","Nome de exibição"
+app,"Create User","Crear usuario","Criar usuário"
+app,"View User: {name}","Ver usuario: {name}","Ver usuário: {name}"
+app,Group,Grupo,Grupo
+app,Groups,Grupos,Grupos
+app,"Create Group","Crear grupo","Criar grupo"
+app,"View Group: {name}","Ver grupo: {name}","Ver grupo: {name}"
+app,Rule,Regla,Regra
+app,Rules,Reglas,Regras
+app,Page,Página,Página
+app,Pages,Páginas,Páginas
+app,"View Page: {name}","Ver página: {name}","Ver página: {name}"
+app,"Create Page","Crear página","Criar página"
+app,"Create Param","Crear parámetro","Criar parâmetro"
+app,"Create Ldap","Crear LDAP","Criar LDAP"
+app,Params,Parámetros,Parâmetros
+app,Param,Parámetro,Parâmetro
+app,"Update Param: {name}","Actualizar parámetro: {name}","Atualizar parâmetro: {name}"
+app,Section,Sección,Seção
+app,Sections,Secciones,Seções
+app,"Create Section","Crear sección","Criar seção"
+app,Content,Contenido,Conteúdo
+app,"Created At","Creado el","Criado em"
+app,"Updated At","Actualizado el","Atualizado em"
+app,Crop,Recortar,Cortar
+app,"Folder ID","ID de carpeta","ID da pasta"
+app,Folder,Carpeta,Pasta
+app,"Create Folder","Crear carpeta","Criar pasta"
+app,"Remove from folder","Eliminar de la carpeta","Remover da pasta"
+app,Folders,Carpetas,Pastas
+app,"View Folder: {name}","Ver carpeta: {name}","Ver pasta: {name}"
+app,"External Access","Acceso externo","Acesso externo"
+app,File,Archivo,Arquivo
+app,"File ID","ID de archivo","ID do arquivo"
+app,Files,Archivos,Arquivos
+app,"File List","Lista de archivos","Lista de arquivos"
+app,"Select File","Seleccionar archivo","Selecionar arquivo"
+app,"Create File","Crear archivo","Criar arquivo"
+app,"Load More","Cargar más","Carregar mais"
+app,"View File: {name}","Ver archivo: {name}","Ver arquivo: {name}"
+app,Home,Inicio,Início
+app,ID,ID,ID
+app,"Keywords (PT)","Palabras clave (PT)","Palavras‑chave (PT)"
+app,"Keywords (ENG)","Palabras clave (EN)","Palavras‑chave (EN)"
+app,Multi,Multi,Múltiplo
+app,Name,Nombre,Nome
+app,Number,Número,Número
+app,Picture,Imagen,Imagem
+app,Reset,Restablecer,Limpar
+app,Resume,Resumen,Resumo
+app,Status,Estado,Status
+app,Save,Guardar,Salvar
+app,Search,Buscar,Pesquisar
+app,Send,Enviar,Enviar
+app,"The requested page does not exist.","La página solicitada no existe.","A página solicitada não existe."
+app,Title,Título,Título
+app,List,Lista,Lista
+app,"Select authors","Seleccionar autores","Selecionar autores"
+app,Searching...,Buscando...,Pesquisando...
+app,"No results found.","No se han encontrado resultados.","Nenhum resultado encontrado."
+app,"Please enter 3 or more characters...","Por favor, introduzca 3 o más caracteres...","Digite 3 ou mais caracteres..."
+app,"Add File","Añadir archivo","Adicionar arquivo"
+app,"Are you sure you want to delete this item?","¿Está seguro de que desea eliminar este elemento?","Tem certeza de que deseja excluir este item?"
+app,"The above error occurred while the Web server was processing your request. Please contact us if you think this is a server error. Thank you. Meanwhile, you may","El error anterior ocurrió mientras el servidor Web procesaba su solicitud. Por favor contáctenos si cree que es un error del servidor. Gracias. Mientras tanto, puede","O erro acima ocorreu enquanto o servidor processava sua solicitação. Se você acredita que é um erro do servidor, entre em contato conosco. Enquanto isso, você pode"
+app,"return to dashboard","volver al panel de control","voltar ao painel"
+app,Create,Crear,Criar
+app,Update,Actualizar,Atualizar
+app,Delete,Eliminar,Excluir
+app,Year,Año,Ano
+app,"This site uses cookies to ensure you get the best experience on our site.","Este sitio utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio.","Este site utiliza cookies para garantir a melhor experiência."
+app,Signup,Registrarse,Cadastro
+app,"Please fill out the following fields to signup:","Por favor, complete los siguientes campos para registrarse:","Preencha os campos abaixo para se cadastrar:"
+app,Password,Contraseña,Senha
+app,"Password Confirm","Confirmar contraseña","Confirmar senha"
+app,Language,Idioma,Idioma
+app,Phone,Teléfono,Telefone
+app,Translations,Traducciones,Traduções
+app,Languages,Idiomas,Idiomas
+app,"Source Message","Mensaje de origen","Mensagem de origem"
+app,"Source Messages","Mensajes de origen","Mensagens de origem"
+app,Radcheck,Radcheck,Radcheck
+app,Radacct,Radacct,Radacct
+app,Licenses,Licencias,Licenças
+app,"License Types","Tipos de licencias","Tipos de licença"
+app,Filter,Filtrar,Filtro
+app,Filters,Filtros,Filtros
+app,Enabled,Habilitado,Habilitado
+app,Groupname,Groupname,"Nome do grupo"
+app,Calledstationid,Calledstationid,Calledstationid
+app,Nasipaddress,Nasipaddress,Nasipaddress
+app,Acctstarttime,Acctstarttime,Acctstarttime
+app,Acctstoptime,Acctstoptime,Acctstoptime
+app,Acctsessiontime,Acctsessiontime,Acctsessiontime
+app,Acctinputoctets,Acctinputoctets,Acctinputoctets
+app,Acctoutputoctets,Acctoutputoctets,Acctoutputoctets
+app,Authentication,Autenticación,Autenticação
+app,"Source Message #{name}","Mensaje de origen #{name}","Mensagem de origem #{name}"
+app,Translates,Traducciones,Traduções
+app,Disabled,Deshabilitado,Desabilitado
+app,"-- All --","-- Todos --","-- Todos --"
+app,Print,Imprimir,Imprimir
+app,"Registered Visitors","Visitantes registrados","Visitantes registrados"
+app,"New Visitors","Nuevos visitantes","Novos visitantes"
+app,"Registered Month","Mes de registro","Mês de registro"
+app,"Users Online","Usuarios en línea","Usuários online"
+app,"Returning Users","Usuarios recurrentes","Usuários recorrentes"
+app,"Active in Last 24h Users","Usuarios activos en las últimas 24h","Usuários ativos nas últimas 24h"
+app,"Registrations Per Day","Registros por día","Registros por dia"
+app,"Operational System (%)","Sistema operativo (%)","Sistema operacional (%)"
+app,"Device Type (%)","Tipo de dispositivo (%)","Tipo de dispositivo (%)"
+app,Patient,Paciente,Paciente
+app,Patients,Pacientes,Pacientes
+app,"Service Origins","Orígenes de servicio","Origens de serviço"
+app,Service,Servicio,Serviço
+app,New,Nuevo,Novo
+app,"Page Header","Encabezado de página","Cabeçalho da página"
+app,"Dinamic Pages","Páginas dinámicas","Páginas dinâmicas"
+app,System,Sistema,Sistema
+app,"Site Section","Sección del sitio","Seção do site"
+app,"Site Sections","Secciones del sitio","Seções do site"
+app,Storage,Almacenamiento,Armazenamento
+app,Notification,Notificación,Notificação
+app,Notifications,Notificaciones,Notificações
+app,Message,Mensaje,Mensagem
+app,Messages,Mensajes,Mensagens
+app,Date,Fecha,Data
+app,Timetable,Horario,Agenda
+app,Active,Activo,Ativo
+app,Inactive,Inactivo,Inativo
+app,Services,Servicios,Serviços
+app,Institution,Institución,Instituição
+app,Institutions,Instituciones,Instituições
+app,"Institution List","Lista de instituciones","Lista de instituições"
+app,"Institution Page","Página de la institución","Página da instituição"
+app,"Service List","Lista de servicios","Lista de serviços"
+app,Professionals,Profesionales,Profissionais
+app,Professional,Profesional,Profissional
+app,"Full Name","Nombre completo","Nome completo"
+app,"Identity Number","Número de identidad","Documento de identidade"
+app,City,Ciudad,Cidade
+app,State,Estado,Estado
+app,Street,Calle,Rua
+app,Post,Publicación,Post
+app,Posts,Publicaciones,Posts
+app,"Post List","Lista de publicaciones","Lista de posts"
+app,Cover,Portada,Capa
+app,Icon,Icono,Ícone
+app,"Medical Specialties","Especialidades médicas","Especialidades médicas"
+app,"Medical Specialty","Especialidad médica","Especialidade médica"
+app,"Daily Agenda","Agenda diaria","Agenda diária"
+app,Order,Orden,Ordem
+app,Question,Pregunta,Pergunta
+app,Answer,Respuesta,Resposta
+app,Valor,Valor,Valor
+app,"Valor Promocional","Valor Promocional","Valor Promocional"
+app,"Promoção Ativa","Promoção Ativa","Promoção Ativa"
+app,"Seção do Serviço","Seção do Serviço","Seção do Serviço"
+app,"Service Origin","Service Origin","Origem do serviço"
+app,"Service Orders","Service Orders","Ordens de serviço"
+app,"Cpf Cnpj","Cpf Cnpj",CPF/CNPJ
+app,District,Distrito,Bairro
+app,"Create Patient","Crear paciente","Criar paciente"
+app,"Register Patient","Registrar paciente","Cadastrar paciente"
+app,"Service Sections","Secciones de servicio","Seções de serviço"
+app,"Service Section","Sección de servicio","Seção de serviço"
+app,"New Service Order","Nueva orden de servicio","Nova ordem de serviço"
+app,Amount,Cantidad,Quantidade
+app,Price,Precio,Preço
+app,"Price Promo","Precio promocional","Preço promocional"
+app,"Active Promo","Promoción activa","Promoção ativa"
+app,"Loyalty Card Number","Número de tarjeta de fidelidad","Número do cartão fidelidade"
+app,"Loyalty Card","Tarjeta de fidelidad","Cartão fidelidade"
+app,"Create Service","Crear servicio","Criar serviço"
+app,Clients,Clientes,Clientes
+app,"Create Dbclient","Crear cliente de base de datos","Criar Dbclient"
+app,"Email Services","Servicios de correo electrónico","Serviços de e‑mail"
+app,"Create Email Service","Crear servicio de correo electrónico","Criar serviço de e‑mail"
+app,Synchronize,Sincronizar,Sincronizar
+app,"Create Daily Agenda","Crear agenda diaria","Criar agenda diária"
+app,"Atualizar DailyAgenda: {name}","Actualizar agenda diaria: {name}","Atualizar DailyAgenda: {name}"
+app,"Create Service Section","Crear sección de servicio","Criar seção de serviço"
+app,Contact,Contacto,Contato
+app,Contacts,Contactos,Contatos
+app,Subject,Subject,Assunto
+app,Text,Text,Texto
+app,"Data Contact","Data Contact","Dados de contato"
+app,"Legend Cover","Legend Cover","Legenda da capa"
+app,"Show Cover","Show Cover","Exibir capa"
+app,Source,Source,Fonte
+app,"Post Section","Post Section","Seção do post"
+*,Auth,Autenticación,Autenticação
+*,Description,Descripción,Descrição
+*,Address,Dirección,Endereço
+*,"Bussines Name","Nombre de la empresa","Nome empresarial"
+*,Configurations,Configuraciones,Configurações
+*,"Postal Code","Código postal",CEP
+*,"Enable LDAP Login","Habilitar inicio de sesión LDAP","Habilitar login via LDAP"
+*,"Enable Recaptcha Login","Habilitar inicio de sesión con reCAPTCHA","Habilitar reCAPTCHA no login"
+*,"Recaptcha Secret Key","Clave secreta de reCAPTCHA","Chave secreta do reCAPTCHA"
+*,"Recaptcha Secret Site Key","Clave del sitio secreta de reCAPTCHA","Chave do site do reCAPTCHA"
+*,"This item is currently in use.","Este elemento está actualmente en uso.","Este item está em uso no momento."
+*,Alert!,¡Alerta!,Alerta!
+*,User,Usuario,Usuário
+*,Users,Usuarios,Usuários
+*,"User Name","Nombre de usuario","Nome de usuário"
+*,"Display Name","Nombre para mostrar","Nome de exibição"
+*,"Create User","Crear usuario","Criar usuário"
+*,"View User: {name}","Ver usuario: {name}","Ver usuário: {name}"
+*,Group,Grupo,Grupo
+*,Groups,Grupos,Grupos
+*,"Create Group","Crear grupo","Criar grupo"
+*,"View Group: {name}","Ver grupo: {name}","Ver grupo: {name}"
+*,Rule,Regla,Regra
+*,Rules,Reglas,Regras
+*,Page,Página,Página
+*,Pages,Páginas,Páginas
+*,"View Page: {name}","Ver página: {name}","Ver página: {name}"
+*,"Create Page","Crear página","Criar página"
+*,"Create Param","Crear parámetro","Criar parâmetro"
+*,"Create Ldap","Crear LDAP","Criar LDAP"
+*,Params,Parámetros,Parâmetros
+*,Param,Parámetro,Parâmetro
+*,"Update Param: {name}","Actualizar parámetro: {name}","Atualizar parâmetro: {name}"
+*,Section,Sección,Seção
+*,Sections,Secciones,Seções
+*,"Create Section","Crear sección","Criar seção"
+*,Content,Contenido,Conteúdo
+*,"Created at","Creado el","Criado em"
+*,"Updated at","Actualizado el","Atualizado em"
+*,Crop,Recortar,Cortar
+*,"Folder ID","ID de carpeta","ID da pasta"
+*,Folder,Carpeta,Pasta
+*,"Create Folder","Crear carpeta","Criar pasta"
+*,"Remove from folder","Eliminar de la carpeta","Remover da pasta"
+*,Folders,Carpetas,Pastas
+*,"View Folder: {name}","Ver carpeta: {name}","Ver pasta: {name}"
+*,"External Access","Acceso externo","Acesso externo"
+*,File,Archivo,Arquivo
+*,"File ID","ID de archivo","ID do arquivo"
+*,Files,Archivos,Arquivos
+*,"File List","Lista de archivos","Lista de arquivos"
+*,"Select File","Seleccionar archivo","Selecionar arquivo"
+*,"Create File","Crear archivo","Criar arquivo"
+*,"Load More","Cargar más","Carregar mais"
+*,"View File: {name}","Ver archivo: {name}","Ver arquivo: {name}"
+*,Home,Inicio,Início
+*,ID,ID,ID
+*,"Keywords (PT)","Palabras clave (PT)","Palavras‑chave (PT)"
+*,"Keywords (ENG)","Palabras clave (EN)","Palavras‑chave (EN)"
+*,Multi,Multi,Múltiplo
+*,Name,Nombre,Nome
+*,Number,Número,Número
+*,Picture,Imagen,Imagem
+*,Reset,Restablecer,Limpar
+*,Resume,Resumen,Resumo
+*,Status,Estado,Status
+*,Save,Guardar,Salvar
+*,Search,Buscar,Pesquisar
+*,Send,Enviar,Enviar
+*,"The requested page does not exist.","La página solicitada no existe.","A página solicitada não existe."
+*,Title,Título,Título
+*,List,Lista,Lista
+*,"Select authors","Seleccionar autores","Selecionar autores"
+*,Searching...,Buscando...,Pesquisando...
+*,"No results found.","No se han encontrado resultados.","Nenhum resultado encontrado."
+*,"Please enter 3 or more characters...","Por favor, introduzca 3 o más caracteres...","Digite 3 ou mais caracteres..."
+*,"Add File","Añadir archivo","Adicionar arquivo"
+*,"Are you sure you want to delete this item?","¿Está seguro de que desea eliminar este elemento?","Tem certeza de que deseja excluir este item?"
+*,"The above error occurred while the Web server was processing your request. Please contact us if you think this is a server error. Thank you. Meanwhile, you may","El error anterior ocurrió mientras el servidor Web procesaba su solicitud. Por favor contáctenos si cree que es un error del servidor. Gracias. Mientras tanto, puede","O erro acima ocorreu enquanto o servidor processava sua solicitação. Se você acredita que é um erro do servidor, entre em contato conosco. Enquanto isso, você pode"
+*,"return to dashboard","volver al panel de control","voltar ao painel"
+*,Create,Crear,Criar
+*,Update,Actualizar,Atualizar
+*,Delete,Eliminar,Excluir
+*,Year,Year,Ano
+*,"This website uses cookies to ensure you get the best experience on our website.","Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio.","Este site utiliza cookies para garantir a melhor experiência."
+site,Epigrafe,Epígrafe,Epígrafe
+site,"Issue ID","ID de la edición","ID da edição"
+site,Issues,Ediciones,Edições
+site,Issue,Edición,Edição
+site,"Create Issue","Crear edición","Criar edição"
+site,Published,Publicado,Publicado
+site,"Under Review","En revisión","Em avaliação"
+site,Rejected,Rejected,Rejeitado
+site,Approved,Approved,Aprovado
+site,Reason,Reason,Motivo
+site,"Reviewed by","Revisado por","Revisado por"
+site,Abstract,Resumen,Resumo
+site,"Are you sure you want to delete this item?","¿Está seguro de que desea eliminar este elemento?","Tem certeza de que deseja excluir este item?"
+site,"Article ID","ID del artículo","ID do artigo"
+site,Articles,Artículos,Artigos
+site,Author,Autor,Autor
+site,Authors,Autores,Autores
+site,Bio,Bio,Bio
+site,Content,Contenido,Conteúdo
+site,"Create Article","Crear artículo","Criar artigo"
+site,"Create Author","Crear autor","Criar autor"
+site,Title,Título,Título
+site,Resume,Resume,Resumo
+site,Update,Actualizar,Atualizar
+site,"Update Article: {name}","Actualizar artículo: {name}","Atualizar artigo: {name}"
+site,"Update Author: {name}","Actualizar autor: {name}","Atualizar autor: {name}"
+site,"Update Issue: {name}","Actualizar edición: {name}","Atualizar edição: {name}"
+site,Volume,Volumen,Volume
+site,Year,Año,Ano
+site,Apresentation,Presentación,Apresentação
+site,Expedient,Expediente,Expediente
+site,Template,Plantilla,Template
+site,"Current Issue","Edición actual","Edição atual"
+site,"Previous Issue","Edición anterior","Edição anterior"
+site,"Recent Issues","Ediciones recientes","Edições recentes"
+*,View,Ver,Visualizar
+site,"More articles","Más artículos","Mais artigos"
+site,By,Por,Por
+*,Privacy,Privacidad,Privacidade
+*,Terms,Términos,Termos
+*,Contact,Contacto,Contato
+*,"Develeped by","Desarrollado por","Desenvolvido por"
+site,"Please enter 3 or more characters...","Por favor, introduzca 3 o más caracteres...","Digite 3 ou mais caracteres..."
+*,"Search Results","Resultados de la búsqueda","Resultados da pesquisa"
+site,"Issue Volume","Volumen de la edición","Volume da edição"
+site,"Issue Number","Número de la edición","Número da edição"
+site,"Issue Year","Año de la edición","Ano da edição"
+site,Keyword(s),Palabra(s) clave,Palavra(s)-chave
+site,"Select authors","Select authors","Selecionar autores"
+site,"Add Article","Añadir artículo","Adicionar artigo"
+*,"Learn more","Más información","Saiba mais"
+*,"I Got It",Entendido,Entendi
+site,"Article Section","Sección del artículo","Seção do artigo"
+*,Translations,Traducciones,Traduções
+*,Languages,Idiomas,Idiomas
+*,Messages,Mensajes,Mensagens
+*,"Source Messages","Mensajes de origen","Mensagens de origem"
+*,"Manager Pages","Gestionar páginas","Gerenciar páginas"
+site,"Manager Articles","Gestionar artículos","Gerenciar artigos"
+*,"List Files","Lista de archivos","Listar arquivos"
+*,Message,Mensaje,Mensagem
+*,"Source Message","Mensaje de origen","Mensagem de origem"
+*,Category,Categoría,Categoria
+*,Language,Idioma,Idioma
+*,Article,Artículo,Artigo
+*,"Create Message","Crear mensaje","Criar mensagem"
+*,"Create Source Message","Crear mensaje de origen","Criar mensagem de origem"
+*,"Create Language","Crear idioma","Criar idioma"
+site,"SUGGESTIVE TEMPLATE FOR SCIENTIFIC ARTICLES","PLANTILLA SUGESTIVA PARA ARTÍCULOS CIENTÍFICOS","TEMPLATE SUGESTIVO PARA ARTIGOS CIENTÍFICOS"
+*,"No further information available","No hay más información disponible","Nenhuma informação adicional disponível"
+site,"View Articles","Ver artículos","View Articles"
+app,Appointments,Citas,Atendimentos
+app,Appointment,Cita,Atendimento
+app,"Payment Methods","Métodos de pago","Formas de pagamento"
+app,"Create Payment Method","Crear método de pago","Criar forma de pagamento"
+app,"Service Payment","Pago del servicio","Pagamento de serviço"
+app,"Service Payments","Pagos del servicio","Pagamentos de serviço"
+app,"Payment Origin","Origen del pago","Origem do pagamento"
+app,"Payment Origins","Orígenes de pago","Origens de pagamento"
+app,Schedule,Horario,Agendar
+app,Schedules,Horarios,Agendamentos
+app,"Down Payment",Anticipo,Entrada
+app,"Installment Frequency","Frecuencia de las cuotas","Frequência de parcelas"
+app,Installments,Cuotas,Parcelas
+app,"Due Date","Fecha de vencimiento",Vencimento
+app,"Add Item","Añadir elemento","Adicionar item"
+app,"View Professional: {name}","Ver profesional: {name}","Ver profissional: {name}"
+app,Invoices,Facturas,Faturas
+app,"Order Items","Elementos de la orden","Itens da ordem"
+app,"Select one state","Select one state","Selecione um estado"
+app,"Select one city","Select one city","Selecione uma cidade"
+app,"Loyalty Cards","Loyalty Cards","Cartões fidelidade"
+app,"List Offerers Services","List Offerers Services","Listar serviços ofertados"
+app,"Create Professional","Create Professional","Criar profissional"
+app,"Register Professional","Register Professional","Cadastrar profissional"
+app,"Used Qtd","Used Qtd","Qtd usada"
+app,"Available Qtd","Available Qtd","Qtd disponível"
+app,"Total Qtd","Total Qtd","Qtd total"
+app,"Related Services","Related Services","Serviços relacionados"
+app,Pending,Pendiente,Pendente
+app,Cancelled,Cancelado,Cancelado
+app,Completed,Completado,Concluído
+app,"Change Invoice Status","Cambiar estado de la factura","Alterar status da fatura"
+app,Declined,Rechazado,Recusado
+app,Paid,Pagado,Pago
+app,Refunded,Reembolsado,Estornado
+app,"Partial Refunded","Reembolso parcial","Estorno parcial"
+app,Open,Abierto,Aberto
+app,"Service Order","Orden de servicio","Ordem de serviço"
+app,Confirmed,Confirmado,Confirmado
+app,"Select a status","Seleccionar un estado","Selecione um status"
+app,Son,Hijo,Filho
+app,Daughter,Hija,Filha
+app,Spouse,Cónyuge,Cônjuge
+app,Guardian,Guardian,Responsável
+app,Guardianship,Custodia,Responsabilidade
+app,Other,Otro,Outro
+app,"Order Service #{number}","Orden de servicio #{number}","Ordem de serviço #{number}"
+app,"View Contract","Ver contrato","Ver contrato"
+app,"External ID","External ID","ID externo"
+app,"External Professional Term","External Professional Term","Termo do profissional externo"
+app,"No expiration date","No expiration date","Sem data de expiração"
+app,"Pay in Cash","Pay in Cash","Pagar em dinheiro"
+app,Daily,Diario,Diário
+app,Weekly,Semanal,Semanal
+app,Montly,Mensual,Mensal
+app,Yearly,Anual,Anual
+app,Invoice,Factura,Fatura
+app,"Generate PDF","Generar PDF","Gerar PDF"
+app,"Pay Day","Día de pago","Dia de pagamento"
+app,"Payment Method","Método de pago","Forma de pagamento"
+app,"Down Payment Method","Método de anticipo","Forma de pagamento da entrada"
+app,Transfer,Transferencia,Transferência
+app,Barcode,"Código de barras","Boleto/Código de barras"
+app,Credit,Crédito,Crédito
+app,"Cancel Invoice","Cancelar factura","Cancelar fatura"
+app,"Do you really want to open this order? All invoices will be deleted!","¿Realmente desea abrir este pedido? ¡Todas las facturas serán eliminadas!","Deseja realmente reabrir esta ordem? Todas as faturas serão excluídas!"
+app,"Package Selected","Paquete seleccionado","Pacote selecionado"
+app,"Select Package","Seleccionar paquete","Selecionar pacote"
+app,"External Professional","External Professional","Profissional externo"
+app,"Select one Professional External","Select one Professional External","Selecione um profissional externo"
+app,"Select one Patient","Select one Patient","Selecione um paciente"
+app,"Select one Service","Select one Service","Selecione um serviço"
+app,"Select one Payment Table","Select one Payment Table","Selecione uma tabela de pagamento"
+app,"Loyalty Card Wizard","Loyalty Card Wizard","Assistente do cartão fidelidade"
+app,Step,Step,Etapa
+app,"Wizard Step","Wizard Step","Etapa do assistente"
+app,"Create Service Order","Create Service Order","Criar ordem de serviço"
+app,"Are you sure you want to go back to the step? Everything created in it will be removed!","Are you sure you want to go back to the step? Everything created in it will be removed!","Tem certeza de que deseja voltar a esta etapa? Tudo criado nela será removido!"
+app,Anamnesis,Anamnesis,Anamnese
+app,"Physical Assessment","Physical Assessment","Avaliação física"
+app,"Psychological Assessment","Psychological Assessment","Avaliação psicológica"
+app,"Nutritional Report","Nutritional Report","Relatório nutricional"
+app,"Medical Report","Medical Report","Relatório médico"
+app,"Final Discharge Report","Final Discharge Report","Relatório de alta final"
+app,"Physical Evaluation","Physical Evaluation","Avaliação física"
+app,"Psychological Evaluation","Psychological Evaluation","Avaliação psicológica"
+app,"Select Report Type","Select Report Type","Selecione o tipo de relatório"
+app,"Report Type","Report Type","Tipo de relatório"
+app,"Select Professional","Select Professional","Selecionar profissional"
+app,"Select Appointment","Select Appointment","Selecionar atendimento"
+app,"Date Report","Date Report","Data do relatório"
+app,"New Professional Report","New Professional Report","Novo relatório profissional"
+app,"Export All Data","Export All Data","Exportar todos os dados"
+app,"Professional Report","Professional Report","Relatório profissional"
+app,"Professional Reports","Professional Reports","Relatórios profissionais"
+app,"Create Professional Report","Create Professional Report","Criar relatório profissional"
+app,"View Professional Reports","View Professional Reports","Ver relatórios profissionais"
+app,"Professional Reports for","Professional Reports for","Relatórios profissionais para"
+app,"Select file(s) to upload","Select file(s) to upload","Selecione arquivo(s) para enviar"
+app,"Remove Files","Remove Files","Remover arquivos"
+app,Duration,Duration,Duração
+app,Size,Size,Tamanho
+app,Type,Tipo,Tipo
+app,Extension,Extension,Extensão
+app,"Create Source Message","Create Source Message","Criar mensagem de origem"
+app,"Selecte Package","Selecte Package","Selecionar pacote"
+app,Cash,Cash,Dinheiro
+app,"Back Step","Back Step","Voltar etapa"
+app,"Generate Invoice","Generate Invoice","Gerar fatura"
+app,"Change Status","Change Status","Alterar status"
+app,Analysis,Analysis,Análise
+app,Origin,Origin,Origem
+app,"Order Status","Order Status","Status da OS"
+app,"Re-invoice Type","Re-invoice Type","Tipo de refaturamento"
+app,"Re-invoice Pending Installments","Re-invoice Pending Installments","Refaturar parcelas pendentes"
+app,"Re-invoice All Installments","Re-invoice All Installments","Refaturar todas as parcelas"
+app,Re-invoice,Re-invoice,Refaturar
+app,"Date of Birth","Date of Birth","Data de nascimento"
+app,"Item Description","Item Description","Descrição do item"
+app,Payday,Payday,"Dia do pagamento"
+app,"Created (From)","Created (From)","Criado (De)"
+app,"Created (To)","Created (To)","Criado (Até)"
+app,Finalized,Finalized,Finalizado
+app,"Schedule Appointment","Schedule Appointment","Agendar atendimento"
+app,"Register Appointment","Register Appointment","Cadastrar atendimento"
+app,"Amount (Min)","Amount (Min)","Valor (Mín.)"
+app,"Amount (Max)","Amount (Max)","Valor (Máx.)"
+app,"Due Date (From)","Due Date (From)","Vencimento (De)"
+app,"Due Date (To)","Due Date (To)","Vencimento (Até)"
+app,"Payday (From)","Payday (From)","Pagamento (De)"
+app,"Payday (To)","Payday (To)","Pagamento (Até)"
+app,Parcel,Parcel,Parcela
+app,"Subscribes Offered","Subscribes Offered","Assinaturas ofertadas"
+app,Subscribe,Subscribe,Assinar
+app,"Available while active","Available while active","Disponível enquanto ativo"
+app,Promotion,Promotion,Promoção
+app,"Your Loyalty Cards","Your Loyalty Cards","Seus cartões fidelidade"
+app,"Client has no cards","Client has no cards","O cliente não possui cartões"
+app,Edit,Editar,Editar
+app,"Personal Details","Personal Details","Dados pessoais"
+app,"Personal Information","Personal Information","Informações pessoais"
+app,"Change Password","Change Password","Alterar senha"
+app,"Manage notification preferences","Manage notification preferences","Gerenciar preferências de notificação"
+app,"Account Actions","Account Actions","Ações da conta"
+app,"Sign Out","Sign Out",Sair
+app,Preferences,Preferencias,Preferências
+app,"Edit Personal Information","Editar información personal","Editar informações pessoais"
+app,"Choose Language","Elegir idioma","Escolher idioma"
+app,Change,Cambiar,Alterar
+app,"New Password","Nueva contraseña","Nova senha"
+app,"Confirm Password","Confirmar contraseña","Confirmar senha"
+app,"Create a new password","Crear una nueva contraseña","Crie uma nova senha"
+app,"Repeat your password","Repita su contraseña","Repita sua senha"
+app,View,Ver,Visualizar
+app,Package,Paquete,Pacote
+app,Request,Solicitud,Solicitação
+app,"Under Analysis","En análisis","Em análise"
+app,Rejected,Rechazado,Rejeitado
+app,Profile,Perfil,Perfil
+app,"In Progress","En progreso","Em andamento"
+app,"Partially Paid","Parcialmente pagado","Parcialmente pago"
+app,Unpaid,"No pagado","Não pago"
+app,"Partially Refunded","Reembolso parcial","Parcialmente estornado"
+app,"Pending Approval","Pendiente de aprobación","Aguardando aprovação"
+app,"Payment Status","Estado del pago","Status do pagamento"
+app,"Approval Status","Estado de aprobación","Status de aprovação"
+app,"Service Progress Status","Estado de progreso del servicio","Status de progresso do serviço"
+app,"I agree to the","Acepto los","Eu concordo com os"
+app,"Request Subscription","Solicitar suscripción","Solicitar assinatura"
+app,and,and,e
+app,"Terms of Service","Términos de servicio","Termos de serviço"
+app,"Privacy Police","Política de privacidad","Política de privacidade"
+app,"Privacy Policy","Política de privacidad","Política de privacidade"
+app,"Not Started","No iniciado","Não iniciado"
+app,Aproved,Aprobado,Aprovado
+app,Approved,Aprobado,Aprovado
+app,"Sign in to your account","Inicie sesión en su cuenta","Faça login na sua conta"
+app,"Enter your CPF","Ingrese su CPF","Informe seu CPF"
+app,"Enter your password","Ingrese su contraseña","Informe sua senha"
+app,"Sign In","Sign In",Entrar
+app,"Sign Up","Sign Up",Cadastrar
+app,"Forgot Password?","¿Olvidó su contraseña?","Esqueceu a senha?"
+app,"Enter your full name","Ingrese su nombre completo","Informe seu nome completo"
+app,"Enter your email","Ingrese su correo electrónico","Informe seu e-mail"
+app,"Enter your phone number","Ingrese su número de teléfono","Informe seu telefone"
+app,"Create a password","Crear una contraseña","Crie uma senha"
+app,"Already have an account?","¿Ya tiene una cuenta?","Já possui uma conta?"
+app,"Create Account","Crear cuenta","Criar conta"
+app,"Sign up to get started","Regístrese para comenzar","Cadastre-se para começar"
+app,"Change Language","Cambiar idioma","Mudar idioma"
+app,"Chose Language","Elegir idioma","Escolher idioma"
+app,Time,Time,Horário
+app,"Invoice number {number} for amount {amount} due {due_date} has been updated to {status}","La factura número {number} por un importe de {amount} con vencimiento el {due_date} ha sido actualizada a {status}","A fatura número {number}, no valor de {amount}, com vencimento em {due_date}, foi atualizada para {status}"
+app,"Invoice Update","Actualización de factura","Atualização de fatura"
+app,"Agenda Update","Actualización de agenda","Atualização de agenda"
+app,"The appointment for {date} at {time} as a doctor {professional} has been updated to {status}","La cita para el {date} a las {time} con el doctor {professional} ha sido actualizada a {status}","O atendimento de {date} às {time} com o médico {professional} foi atualizado para {status}"
+app,"The {service} with the professional {professional} has been scheduled for {date} at {time}","El {service} con el profesional {professional} ha sido programado para el {date} a las {time}","O serviço {service} com o profissional {professional} foi agendado para {date} às {time}"
+app,"The appointment for service {service} on {date} at {time} with professional {professional} has been updated to {status}","La cita para el servicio {service} el {date} a las {time} con el profesional {professional} ha sido actualizada a {status}","O atendimento do serviço {service} em {date} às {time} com o profissional {professional} foi atualizado para {status}"
+app,"View Details","Ver detalles","Ver detalhes"
+app,"Forgot Password","¿Olvidó su contraseña?","Esqueci a senha"
+app,"Enter your email to reset your password","Ingrese su correo electrónico para restablecer su contraseña","Informe seu e-mail para redefinir a senha"
+app,"Remember your password","Recuerda su contraseña","Lembrou sua senha"
+app,"Resend Email","Reenviar correo electrónico","Reenviar e-mail"
+app,"Check Your Email","Verifique su correo electrónico","Verifique seu e-mail"
+app,"Remember your password?","¿Recuerda su contraseña?","Lembrou sua senha?"
+app,"Send Request","Enviar solicitud","Enviar solicitação"
+app,Yes,Sí,Sim
+app,No,No,Não
+app,All,Todos,Todos
+app,"Is Package","Is Package","É pacote"
+app,"Remember me","Remember Me",Lembrar-me
+app,"Client has no appointments","Client has no appointments","O cliente não possui atendimentos"
+app,Calendar,Calendar,Calendário
+app,Accept,Accept,Aceitar
+app,"Services Offers","Services Offers","Serviços ofertados"
+app,"No patient found with this email","No patient found with this email","Nenhum paciente encontrado com este e-mail"
+app,"Please, provide your email","Please, provide your email","Por favor, informe seu e-mail"
+app,Details,Detalles,Detalhes
+app,Orders,Orders,Ordens
+app,"Your Orders","Your Orders","Suas ordens"
+app,"Client has no orders","Client has no orders","O cliente não possui ordens"
+app,"Order Number","Order Number","Número da ordem"
+app,"Order Date","Order Date","Data da ordem"
+app,"Clear all","Clear all","Limpar tudo"
+app,Close,Cerrar,Fechar
+app,"No notifications found.","No notifications found.","Nenhuma notificação encontrada."
+app,"The service order of number #{service_id} has been updated to {status}","The service order of number #{service_id} has been updated to {status}","A ordem de serviço número #{service_id} foi atualizada para {status}"
+app,"Service Order Update","Service Order Update","Atualização de ordem de serviço"
+app,"If you forgot your password you can","If you forgot your password you can","Se você esqueceu sua senha, você pode"
+app,"Failed to change language.","Failed to change language.","Falha ao trocar idioma."
+app,"Network error when changing language","Network error when changing language","Erro de rede ao trocar idioma"
+app,"Error copying URL","Error copying URL","Erro ao copiar URL"
+app,"Failed to update order. Reload the page","Failed to update order. Reload the page","Erro ao atualizar a ordem. Recarregue a página"
+app,"Page error:","Page error:","Erro na página:"
+app,"Invalid image:","Invalid image:","Imagem inválida:"
+app,Saved!,Saved!,Salvo!
+app,"Error creating folder!","Error creating folder!","Erro ao criar pasta!"
+app,"Error deleting!","Error deleting!","Erro ao excluir!"
+app,"Error updating status!","Error updating status!","Erro ao atualizar status!"
+app,"Error creating translation!","Error creating translation!","Erro ao criar tradução!"
+app,"Error saving!","Error saving!","Erro ao salvar!"
+app,"Error sending file!","Error sending file!","Erro ao enviar arquivo!"
+app,"Error adding!","Error adding!","Erro ao adicionar!"
+app,"Error adding file!","¡Error al agregar el archivo!","Erro ao adicionar arquivo!"
+app,"Error saving file!","¡Error al guardar el archivo!","Erro ao salvar arquivo!"
+app,"Error removing files!","¡Error al eliminar archivos!","Erro ao remover arquivos!"
+app,"Error removing {$lower}!","¡Error al eliminar {$lower}!","Erro ao remover {$lower}!"
+app,"Error loading {$lower}!","¡Error al cargar {$lower}!","Erro ao carregar {$lower}!"
+app,"Back to Login","Volver al inicio de sesión","Voltar ao login"
+app,"Click the link below to reset your password:","Haga clic en el enlace de abajo para restablecer su contraseña:","Clique no link abaixo para redefinir sua senha:"
+app,"Don't have an account?","¿No tienes una cuenta?","Não tem uma conta?"
+app,"Edit Profile","Editar perfil","Editar perfil"
+app,"Failed to set temporary password","Error al establecer la contraseña temporal","Falha ao definir senha temporária"
+app,"Follow the link below to reset your password:","Siga el siguiente enlace para restablecer su contraseña:","Siga o link abaixo para redefinir sua senha:"
+app,"Hello, {name}","Hola, {name}","Olá, {name}"
+app,"List Files","Lista de archivos","Listar arquivos"
+app,"New User","Nuevo usuario","Novo usuário"
+app,Parameters,Parámetros,Parâmetros
+app,"Please choose your new password:","Por favor, elija su nueva contraseña:","Escolha sua nova senha:"
+app,"Please fill out your email. A link to reset password will be sent there.","Por favor, complete su correo electrónico. Se enviará un enlace de restablecimiento de contraseña.","Preencha seu e-mail. Um link para redefinição de senha será enviado."
+app,"Preview Email Template","Vista previa de la plantilla de correo electrónico","Pré-visualizar modelo de e-mail"
+app,"Profile Image","Imagen de perfil","Imagem do perfil"
+app,Reject,Rechazar,Rejeitar
+app,"Remember Me","Recuérdame",Lembrar-me
+app,"Remove Roles","Eliminar roles","Remover perfis"
+app,"Reopen Order","Reabrir pedido","Reabrir ordem"
+app,"Request password reset","Solicitar restablecimiento de contraseña","Solicitar redefinição de senha"
+app,"reset it",restablecerla,redefini-la
+app,"Reset Password","Restablecer contraseña","Redefinir senha"
+app,Signin,Iniciar sesión,Entrar
+app,"This message was sent automatically by the {title}, do not respond.","Este mensaje fue enviado automáticamente por {title}, no responda.","Esta mensagem foi enviada automaticamente pelo {title}, não responda."
+app,"We've sent password reset instructions to your email address.","Hemos enviado instrucciones de restablecimiento de contraseña a su dirección de correo electrónico.","Enviamos instruções de redefinição de senha para seu e-mail."
+app,"You will be required to change it after signing in.","Se le pedirá que la cambie después de iniciar sesión.","Você precisará alterá-la após o login."
+app,"Your temporary password is:","Su contraseña temporal es:","Sua senha temporária é:"
+backend,"This message was sent automatically by the {title}, do not respond.","This message was sent automatically by the {title}, do not respond.","Esta mensagem foi enviada automaticamente pelo {title}, não responda."
+app,About,Acerca de,Sobre
+app,"Access Logs","Registros de acceso","Logs de acesso"
+app,"Access Token","Token de acceso","Token de acesso"
+app,Action,Acción,Ação
+app,Actions,Acciones,Ações
+app,Activities,Actividades,Atividades
+app,"Add Automatic Menu","Añadir menú automático","Adicionar menu automático"
+app,"Add Translate","Añadir traducción","Adicionar tradução"
+app,"Add Translation","Añadir traducción","Adicionar tradução"
+app,Admin,Admin,Admin
+app,"All Languages","Todos los idiomas","Todos os idiomas"
+app,"Already exists a section with this Slug/Group/Language combination.","Ya existe una sección con esta combinación de Slug/Grupo/Idioma.","Já existe uma seção com esta combinação de Slug/Grupo/Idioma."
+app,"A page with this Slug/Group/Language/Section already exists.","Ya existe una página con esta combinación de Slug/Grupo/Idioma/Sección.","Já existe uma página com esta combinação de Slug/Grupo/Idioma/Seção."
+app,Applied,Applied,Aplicada
+app,"Applied at","Applied at","Aplicada em"
+app,Apply,Aplicar,Aplicar
+app,"Apply all {n} pending migrations?","Apply all {n} pending migrations?","Aplicar todas as {n} migrations pendentes?"
+app,"Apply all pending","Apply all pending","Aplicar todas as pendentes"
+app,"Apply ""{n}""?","Apply ""{n}""?","Aplicar ""{n}""?"
+app,"Apply Now","Apply Now","Inscreva-se agora"
+app,"Academic research groups and projects","Academic research groups and projects","Grupos e projetos de pesquisa acadêmica"
+app,"All courses","All Courses","Todos os cursos"
+app,"All Courses","Todos los cursos","Todos os cursos"
+app,"A sysmenu already exists for {route} in this parent.","A sysmenu already exists for {route} in this parent.","Já existe um sysmenu para {route} neste pai."
+app,Area:,Area:,Área:
+app,"At least 6 characters.","At least 6 characters.","Pelo menos 6 caracteres."
+app,Attachments,Attachments,Anexos
+app,Attribute,Attribute,Atributo
+app,"Auth Key","Auth Key","Chave de autenticação"
+app,"Available actions","Available actions","Ações disponíveis"
+app,"Back to Home","Back to Home","Voltar ao início"
+app,"Back to migrations","Back to migrations","Voltar às migrations"
+app,Banner,Banner,Banner
+app,Banners,Banners,Banners
+app,Bio,Bio,Bio
+app,Blog,Blog,Blog
+app,"Body HTML","Body HTML","HTML do corpo"
+app,"Business Name","Business Name","Nome da empresa"
+app,Cancel,Cancelar,Cancelar
+app,Canceled,Cancelado,Cancelado
+app,"Cannot delete group. {message}","No se puede eliminar el grupo. {message}","Não é possível excluir o grupo. {message}"
+app,Categories,Categorías,Categorias
+app,Category,Categoría,Categoria
+app,Checkbox,Checkbox,"Caixa de seleção"
+app,"Check this to generate a migration that registers the dynamic form in the database.","Marque esto para generar una migración que registre el formulario dinámico en la base de datos.","Marque para gerar uma migration que registra o formulário dinâmico no banco de dados."
+app,"Check your email for further instructions.","Revise su correo electrónico para más instrucciones.","Verifique seu e-mail para mais instruções."
+app,Choose...,Elegir...,Escolha...
+app,"Choose Existing","Elegir existente","Escolher existente"
+app,"Choose how the views should be generated. ""Widgets"" (Dynamic) uses FormResponseGridView and FormResponseMetaWidget for automated rendering. ""Manual"" (Static) generates individual field inputs.","Elija cómo se deben generar las vistas. ""Widgets"" (Dinámico) utiliza FormResponseGridView y FormResponseMetaWidget para la representación automatizada. ""Manual"" (Estático) genera entradas de campo individuales.","Escolha como as views serão geradas. ""Widgets"" usa FormResponseGridView e FormResponseMetaWidget. ""Manual"" gera campos individuais."
+app,CKEditor,CKEditor,CKEditor
+app,"Class must extend yii\db\ActiveRecord.","La clase debe extender yii\db\ActiveRecord.","A classe deve estender yii\db\ActiveRecord."
+app,"Class not found.","Clase no encontrada.","Classe não encontrada."
+app,Clear,Limpiar,Limpar
+app,Clone,Clonar,Clonar
+app,"Clone failed at step ""{step}"": {error}","La clonación falló en el paso ""{step}"": {error}","Falha ao clonar na etapa ""{step}"": {error}"
+app,"Clone Page: {name}","Clonar página: {name}","Clonar página: {name}"
+app,"Clone to Language","Clonar a idioma","Clonar para idioma"
+app,"Close Project","Cerrar proyecto","Fechar projeto"
+app,Code,Código,Código
+app,Configuration,Configuración,Configuração
+app,"Configuration cloned","Configuración clonada","Configuração clonada"
+app,"Configuration cloned successfully.","Configuración clonada con éxito.","Configuração clonada com sucesso."
+app,"Configuration ID","ID de configuración","ID da configuração"
+app,"Configuration not found.","Configuración no encontrada.","Configuração não encontrada."
+app,"Configurations Updated","Configuraciones actualizadas","Configurações atualizadas"
+app,"Connection error with Google: {0}","Error de conexión con Google: {0}","Erro de conexão com o Google: {0}"
+app,"Content auto-translated to {0} using {1}. Please review before saving.","Contenido traducido automáticamente a {0} usando {1}. Por favor revise antes de guardar.","Conteúdo traduzido automaticamente para {0} usando {1}. Revise antes de salvar."
+app,"Continue reading","Continuar leyendo","Continue lendo"
+app,Contract,Contrato,Contrato
+app,Controller,Controlador,Controller
+app,"Controller not found.","Controlador no encontrado.","Controller não encontrado."
+app,Coordinator,Coordinador,Coordenador
+app,"Could not send the message. Please try again.","No se pudo enviar el mensaje. Por favor intente de nuevo.","Não foi possível enviar a mensagem. Tente novamente."
+app,"Course Data","Datos del curso","Dados do curso"
+app,"Course MetaData","Metadados del curso","Metadados do curso"
+app,"Course not found.","Curso no encontrado.","Curso não encontrado."
+app,Courses,Cursos,Cursos
+app,"Cover Image","Imagen de portada","Imagem de capa"
+app,"CPU Usage","Uso de CPU","Uso de CPU"
+app,"Create Client","Crear cliente","Criar cliente"
+app,Created,Creado,Criado
+app,"Created At (From)","Creado en (Desde)","Criado em (De)"
+app,"Created At (To)","Creado en (Hasta)","Criado em (Até)"
+app,"Created in","Creado en","Criado em"
+app,"Create Dynamic Form","Crear formulario dinámico","Criar formulário dinâmico"
+app,"Create Dynamic Widget","Crear widget dinámico","Criar widget dinâmico"
+app,"Create Form Field","Crear campo de formulario","Criar campo de formulário"
+app,"Create Language","Crear idioma","Criar idioma"
+app,"Create License","Crear licencia","Criar licença"
+app,"Create License Type","Crear tipo de licencia","Criar tipo de licença"
+app,"Create Log","Crear registro","Criar log"
+app,"Create Menu","Crear menú","Criar menu"
+app,"Create {name}","Crear {name}","Criar {name}"
+app,"Create Report Template","Crear plantilla de informe","Criar modelo de relatório"
+app,"Create Role","Crear rol","Criar perfil"
+app,"Create Roles Template","Crear plantilla de roles","Criar modelo de perfis"
+app,"Create Tag","Crear etiqueta","Criar tag"
+app,"Create Trigger","Crear gatilho","Criar gatilho"
+app,CSS,CSS,CSS
+app,"Css Content","Css Content","Conteúdo CSS"
+app,Current,Current,Atual
+app,"Current group is not defined.","Current group is not defined.","Grupo atual não está definido."
+app,"Custom Css","Custom CSS","CSS personalizado"
+app,"Custom CSS","CSS personalizado","CSS personalizado"
+app,"Custom Js","Custom JS","JS personalizado"
+app,"Custom JS","JS personalizado","JS personalizado"
+app,Dark,Dark,Escuro
+app,Data,Data,Dados
+app,"Database Migrations","Database Migrations","Migrations do banco de dados"
+app,"Data Mapping","Data Mapping","Mapeamento de dados"
+app,Date/Time,Date/Time,Data/Hora
+app,Default,Predeterminado,Padrão
+app,"Default (Create/Edit in Footer tab)","Predeterminado (Crear/Editar en la pestaña de Pie de página)","Padrão (Criar/Editar na aba Rodapé)"
+app,"Default (Create/Edit in Navbar tab)","Predeterminado (Crear/Editar en la pestaña de Barra de navegación)","Padrão (Criar/Editar na aba Navbar)"
+app,"Delete all","Eliminar todos","Excluir todos"
+app,Deleted,Eliminado,Excluído
+app,"Delete read","Eliminar leídas","Excluir lidas"
+app,Device,Dispositivo,Dispositivo
+app,"Disk Space","Espacio en disco","Espaço em disco"
+app,"Do you really want to remove the file?","¿Realmente desea eliminar el archivo?","Deseja realmente remover o arquivo?"
+app,"Do you really want to remove this file?","¿Realmente desea eliminar este archivo?","Deseja realmente remover este arquivo?"
+app,"Dry-run: no roles were removed.","Dry-run: no roles were removed.","Simulação: nenhum perfil foi removido."
+app,Duration:,Duration:,Duração:
+app,"Dynamic form not found: {name}","Dynamic form not found: {name}","Formulário dinâmico não encontrado: {name}"
+app,"Dynamic Forms","Formularios dinámicos","Formulários dinâmicos"
+app,"Dynamic Forms (virtual)","Formularios dinámicos (virtuales)","Formulários dinâmicos (virtuais)"
+app,"Dynamic Widget","Widget dinámico","Widget dinâmico"
+app,"Dynamic Widgets","Widgets dinámicos","Widgets dinâmicos"
+app,"Edit User: {name}","Editar usuario: {name}","Editar usuário: {name}"
+app,"Email Service","Servicio de correo electrónico","Serviço de e-mail"
+app,"Email Template","Plantilla de correo electrónico","Modelo de e-mail"
+app,(empty),(vacío),(vazio)
+app,"Empty text","Texto vacío","Texto vazio"
+app,"Enable Encryption","Habilitar cifrado","Habilitar criptografia"
+app,Encryption,Cifrado,Criptografia
+app,End,Fin,Fim
+app,"End Date","Fecha de finalización","Data final"
+app,Enrollment,Inscripción,Inscrição
+app,"Enrollment Data","Datos de inscripción","Dados da inscrição"
+app,Enrollments,Inscripciones,Inscrições
+app,Enrolment,Inscripción,Inscrição
+app,"Enter origin and press Enter:","Ingrese el origen y presione Enter:","Digite a origem e pressione Enter:"
+app,"Enter search term...","Ingrese el término de búsqueda...","Digite o termo de busca..."
+app,"Error cloning configuration: {error}","Error cloning configuration: {error}","Erro ao clonar configuração: {error}"
+app,"Error: {code}","Error: {code}","Erro: {code}"
+app,"Error creating sysmenu.","Error creating sysmenu.","Erro ao criar sysmenu."
+app,"Error opening image editor.","Error opening image editor.","Erro ao abrir o editor de imagens."
+app,"Error saving cloned model.","Error saving cloned model.","Erro ao salvar modelo clonado."
+app,"Error saving clone draft.","Error saving clone draft.","Erro ao salvar rascunho do clone."
+app,"Error saving record.","Error saving record.","Erro ao salvar registro."
+app,"Error saving translated record.","Error saving translated record.","Erro ao salvar registro traduzido."
+app,"Error updating record.","Error updating record.","Erro ao atualizar registro."
+app,"Error while saving. Please try again.","Error while saving. Please try again.","Erro ao salvar. Tente novamente."
+app,"Expiry Date","Fecha de caducidad","Data de expiração"
+app,"Extension not found.","Extensión no encontrada.","Extensão não encontrada."
+app,"Extension Programmes","Programas de extensión","Programas de extensão"
+app,External,Externo,Externo
+app,Facebook,Facebook,Facebook
+app,"Facilities and resources available to our community","Facilities and resources available to our community","Instalações e recursos disponíveis para nossa comunidade"
+app,Failed,Failed,Falhou
+app,"Failed to clone: {msg}","Failed to clone: {msg}","Falha ao clonar: {msg}"
+app,"Failed to clone theme.","Failed to clone theme.","Falha ao clonar tema."
+app,"Failed to clone the record.","Error al clonar el registro.","Falha ao clonar o registro."
+app,"Failed to delete.","Error al eliminar.","Falha ao excluir."
+app,"Failed to load files.","Error al cargar archivos.","Falha ao carregar arquivos."
+app,"Failed to physical delete file {id}: {error}","Error al eliminar físicamente el archivo {id}: {error}","Falha ao excluir fisicamente o arquivo {id}: {error}"
+app,"Failed to remove file from server.","Error al eliminar archivo del servidor.","Falha ao remover arquivo do servidor."
+app,"Failed to save clone.","Error al guardar el clon.","Falha ao salvar clone."
+app,"Failed to send to the user.","Error al enviar al usuario.","Falha ao enviar ao usuário."
+app,Failure,Fallo,Falha
+app,"Fallback Image","Imagen de respaldo","Imagem substituta"
+app,"Fallback Images","Imágenes de respaldo","Imagens substitutas"
+app,FAQ,FAQ,FAQ
+app,"FAQ Section","FAQ Section","Seção de FAQ"
+app,Feature,Funcionalidad,Funcionalidade
+app,Features,Funcionalidades,Funcionalidades
+app,"Feature Section","Sección de funcionalidades","Seção de funcionalidades"
+app,Field,Campo,Campo
+app,"Field Map","Mapa de campos","Mapeamento de campos"
+app,"File is referenced and cannot be removed.","File is referenced and cannot be removed.","O arquivo está referenciado e não pode ser removido."
+app,"File not found.","File not found.","Arquivo não encontrado."
+app,"File not removed","File not removed","Arquivo não removido"
+app,"File not updated!","File not updated!","Arquivo não atualizado!"
+app,"File removed","File removed","Arquivo removido"
+app,"Files moved: ","Files moved: ","Arquivos movidos:"
+app,"Files not moved","Files not moved","Arquivos não movidos"
+app,"File updated successfully!","File updated successfully!","Arquivo atualizado com sucesso!"
+app,"Fill only if you are changing the password.","Fill only if you are changing the password.","Preencha apenas se estiver alterando a senha."
+app,"Find the right programme for your goals","Find the right programme for your goals","Encontre o programa certo para seus objetivos"
+app,Finished,Finalizado,Finalizado
+app,"Fixed navbar","Barra de navegación fija","Navbar fixo"
+app,"Follow us","Síguenos",Siga-nos
+app,Footer,Pie de página,Rodapé
+app,"Footer HTML","HTML del pie de página","HTML do rodapé"
+app,"Footer Internal Name","Nombre interno del pie de página","Nome interno do rodapé"
+app,Footers,Pies de página,Rodapés
+app,"Footer Status","Estado del pie de página","Status do rodapé"
+app,Form,Formulario,Formulário
+app,"Form Fields","Campos del formulario","Campos do formulário"
+app,"Form successfully submitted.","Formulario enviado con éxito.","Formulário enviado com sucesso."
+app,Free,Gratis,Gratuito
+app,"Frequently Asked Questions","Preguntas frecuentes","Perguntas frequentes"
+app,From,Desde,De
+app,"From our blog","Desde nuestro blog","Do nosso blog"
+app,"Full Width Pics","Imágenes de ancho completo","Imagens em largura total"
+app,Gallery,Galería,Galeria
+app,"Gemini API Error: {0}","Error de la API Gemini: {0}","Erro na API Gemini: {0}"
+app,"Gemini API Key not configured.","Clave de la API Gemini no configurada.","Chave da API Gemini não configurada."
+app,"General Settings","Configuraciones generales","Configurações gerais"
+app,"Generate automatic description","Generar descripción automática","Gerar descrição automática"
+app,"Generate Registration Migration","Generar migración de registro","Gerar migration de registro"
+app,"Generate View Files","Generar archivos de vista","Gerar arquivos de view"
+app,"Get in touch","Póngase en contacto","Entre em contato"
+app,"Get Started","Comenzar","Comece agora"
+app,"GrapesJS Editor","Editor GrapesJS","Editor GrapesJS"
+app,"Grapes State","Estado de Grapes","Estado do GrapesJS"
+app,"Group deleted.","Grupo eliminado.","Grupo excluído."
+app,"Group ID","ID del grupo","ID do grupo"
+app,"Group without defined level.","Grupo sin nivel definido.","Grupo sem nível definido."
+app,"Has End Date","Has End Date","Tem data de fim"
+app,"Have more questions?","Have more questions?","Tem mais perguntas?"
+app,"Header HTML","Header HTML","HTML do cabeçalho"
+app,Hidden,Oculto,Oculto
+app,Homepage,Homepage,"Página inicial"
+app,Host,Host,Host
+app,"How can we help you?","How can we help you?","Como podemos ajudar?"
+app,"Html Content","Html Content","Conteúdo HTML"
+app,"HTML Customization","HTML Customization","Personalização HTML"
+app,"Icon (FontAwesome)","Icon (FontAwesome)","Ícone (FontAwesome)"
+app,Identifier,Identificador,Identificador
+app,Infrastructure,Infraestructura,Infraestrutura
+app,"Infrastructure item not found.","Infrastructure item not found.","Item de infraestrutura não encontrado."
+app,"In progress","En progreso","Em andamento"
+app,"Institution not found.","Institution not found.","Instituição não encontrada."
+app,Instructor,Instructor,Instrutor
+app,"Instructor Data","Instructor Data","Dados do instrutor"
+app,Instructors,Instructors,Instrutores
+app,"Interface language","Interface language","Idioma da interface"
+app,"In use!","In use!","Em uso!"
+app,"Invalid group.","Invalid group.","Grupo inválido."
+app,"Invalid method","Invalid method","Método inválido"
+app,"Invalid migration name.","Invalid migration name.","Nome de migration inválido."
+app,"Invalid request.","Invalid request.","Requisição inválida."
+app,"Invalid user.","Invalid user.","Usuário inválido."
+app,Investment,Inversión,Investimento
+app,"Item with ID {id} not found.","Elemento con ID {id} no encontrado.","Item com ID {id} não encontrado."
+app,"It is not possible to exclude the initial configuration.","No es posible excluir la configuración inicial.","Não é possível excluir a configuração inicial."
+app,"It is not possible to exclude the master user.","No es posible excluir al usuario maestro.","Não é possível excluir o usuário master."
+app,JavaScript,JavaScript,JavaScript
+app,"Jobs, internships and volunteer positions","Empleos, pasantías y posiciones de voluntariado","Vagas, estágios e posições voluntárias"
+app,Label,Etiqueta,Rótulo
+app,"Language clone created successfully.","Clon de idioma creado con éxito.","Clone de idioma criado com sucesso."
+app,"Last Posts","Últimas publicaciones","Últimos posts"
+app,"Latest News","Últimas noticias","Últimas notícias"
+app,Lattes,Lattes,Lattes
+app,"Learn More","Más información","Saiba mais"
+app,"Leave blank to keep the current password.","Deje en blanco para mantener la contraseña actual.","Deixe em branco para manter a senha atual."
+app,"Leave empty to auto-generate based on Theme name","Deje vacío para generar automáticamente basado en el nombre del tema","Deixe vazio para gerar automaticamente com base no nome do tema"
+app,"Legal Name","Nombre legal","Razão social"
+app,Level,Nivel,Nível
+app,License,Licencia,Licença
+app,"License expired!","¡Licencia expirada!","Licença expirada!"
+app,"License expired for this group hierarchy.","Licencia expirada para esta jerarquía de grupos.","Licença expirada para esta hierarquia de grupo."
+app,"License Type","Tipo de licencia","Tipo de licença"
+app,"License Type ID","ID del tipo de licencia","ID do tipo de licença"
+app,Light,Claro,Claro
+app,Link,Enlace,Link
+app,LinkedIn,LinkedIn,LinkedIn
+app,"Link Existing Footer","Vincular pie de página existente","Vincular rodapé existente"
+app,"Link Existing Navbar","Vincular barra de navegación existente","Vincular navbar existente"
+app,List?,¿Listar?,Listar?
+app,"Live Notifications","Notificaciones en vivo","Notificações ao vivo"
+app,"Live Preview","Vista previa en vivo","Pré-visualização ao vivo"
+app,"Load Default Bootstrap","Cargar Bootstrap predeterminado","Carregar Bootstrap padrão"
+app,Loading,Cargando,Carregando
+app,"Loading image and editor...","Cargando imagen y editor...","Carregando imagem e editor..."
+app,"Loading more results...","Cargando más resultados...","Carregando mais resultados..."
+app,Logging,Registro,"Registro de logs"
+app,"Login failed.","Login failed.","Falha no login."
+app,"Login Logs","Login Logs","Logs de login"
+app,Logo,Logo,Logo
+app,Logout,"Cerrar sesión",Sair
+app,Logs,Registros,Logs
+app,"Manage your notifications","Manage your notifications","Gerencie suas notificações"
+app,"Mark all as read","Mark all as read","Marcar todas como lidas"
+app,"Max Devices","Max Devices","Dispositivos máximos"
+app,"Meet the faculty","Meet the faculty","Conheça o corpo docente"
+app,Memory,Memoria,Memória
+app,Menu,Menú,Menu
+app,Menus,Menús,Menus
+app,"Message sent successfully!","¡Mensaje enviado con éxito!","Mensagem enviada com sucesso!"
+app,"Meta Tags","Etiquetas Meta","Meta Tags"
+app,Migration,Migración,Migration
+app,"Migration result","Resultado de la migración","Resultado da migration"
+app,"Minimum 10 characters.","Minimum 10 characters.","Mínimo 10 caracteres."
+app,"Minimum 6 characters.","Minimum 6 characters.","Mínimo 6 caracteres."
+app,"Missing parameters","Missing parameters","Parâmetros ausentes"
+app,"Missing primary key parameters.","Missing primary key parameters.","Parâmetros de chave primária ausentes."
+app,Modality,Modality,Modalidade
+app,Modality:,Modality:,Modalidade:
+app,Model,Modelo,Model
+app,"Model Class","Clase del modelo","Classe do model"
+app,"Model class not found","Clase del modelo no encontrada","Classe do model não encontrada"
+app,"Model class not found.","Clase del modelo no encontrada.","Classe do model não encontrada."
+app,"Model class not found: {class}","Clase del modelo no encontrada: {class}","Classe do model não encontrada: {class}"
+app,"Model cloned successfully.","Modelo clonado con éxito.","Model clonado com sucesso."
+app,"Model does not support adding files","El modelo no admite la adición de archivos","O model não suporta adição de arquivos"
+app,"Model does not support removing files","El modelo no admite la eliminación de archivos","O model não suporta remoção de arquivos"
+app,"Model Field","Campo del modelo","Campo do model"
+app,"Model Group","Grupo del modelo","Grupo do model"
+app,"Model ID","ID del modelo","ID do model"
+app,"Model not found","Modelo no encontrado","Model não encontrado"
+app,"Model not found.","Modelo no encontrado.","Model não encontrado."
+app,"More news","More news","Mais notícias"
+app,"Move to:","Move to:","Mover para:"
+app,"Multiple Select","Multiple Select","Seleção múltipla"
+app,Navbar,Barra de navegación,Navbar
+app,"Navbar Internal Name","Nombre interno de la barra de navegación","Nome interno da navbar"
+app,Navbars,Barras de navegación,Navbars
+app,"Navbar Status","Estado de la barra de navegación","Status da navbar"
+app,Neighborhood,Barrio,Bairro
+app,"New Enrollment","Nueva inscripción","Nova inscrição"
+app,"New Folder","Nueva carpeta","Nova pasta"
+app,"New Instructor","Nuevo instructor","Novo instrutor"
+app,"New Opportunity","Nueva oportunidad","Nova oportunidade"
+app,"New password saved.","Nueva contraseña guardada.","Nova senha salva."
+app,News,Noticias,Notícias
+app,"New Translate","Nueva traducción","Nova tradução"
+app,"New Venue","Nuevo lugar","Novo local"
+app,Next,Siguiente,Próximo
+app,"No active license found in the group hierarchy.","No active license found in the group hierarchy.","Nenhuma licença ativa encontrada na hierarquia de grupos."
+app,"No applied migrations.","No applied migrations.","Nenhuma migration aplicada."
+app,"No courses found.","No courses found.","Nenhum curso encontrado."
+app,"No data received.","No data received.","Nenhum dado recebido."
+app,"No filters available for this module.","No filters available for this module.","Nenhum filtro disponível para este módulo."
+app,"No image","No image","Sem imagem"
+app,"No image configured","No image configured","Sem imagem configurada"
+app,"No image selected","No image selected","Nenhuma imagem selecionada"
+app,"No infrastructure found.","No infrastructure found.","Nenhuma infraestrutura encontrada."
+app,"No instructors found.","No instructors found.","Nenhum instrutor encontrado."
+app,"No items selected.","No items selected.","Nenhum item selecionado."
+app,"No metadata.","No metadata.","Sem metadados."
+app,"No open enrolments at this time.","No open enrolments at this time.","Nenhuma inscrição aberta no momento."
+app,"No opportunities found.","No opportunities found.","Nenhuma oportunidade encontrada."
+app,"No pending migrations.","No pending migrations.","Nenhuma migration pendente."
+app,"No programmes found.","No programmes found.","Nenhum programa encontrado."
+app,"No recipients found.","No recipients found.","Nenhum destinatário encontrado."
+app,"No recipients found in the group.","No recipients found in the group.","Nenhum destinatário encontrado no grupo."
+app,"No recipients found in the scope.","No recipients found in the scope.","Nenhum destinatário encontrado no escopo."
+app,"No research found.","No research found.","Nenhuma pesquisa encontrada."
+app,"No results found","No results found","Nenhum resultado encontrado"
+app,Notice,Aviso,Aviso
+app,"Notice Document","Notice Document","Documento de aviso"
+app,"Notification Message","Notification Message","Mensagem de notificação"
+app,"Notification not found.","Notification not found.","Notificação não encontrada."
+app,"Notification sent to 1 user.","Notification sent to 1 user.","Notificação enviada para 1 usuário."
+app,"Notification sent to {n} user(s) globally.","Notification sent to {n} user(s) globally.","Notificação enviada para {n} usuário(s) globalmente."
+app,"Notification sent to {n} user(s) in the group.","Notification sent to {n} user(s) in the group.","Notificação enviada para {n} usuário(s) no grupo."
+app,"Notification sent to {n} user(s) in the scope.","Notification sent to {n} user(s) in the scope.","Notificação enviada para {n} usuário(s) no escopo."
+app,"Notifications Interval","Notifications Interval","Intervalo de notificações"
+app,"(not set)","(not set)","(não definido)"
+app,"Open calls and registration processes","Open calls and registration processes","Chamadas abertas e processos de inscrição"
+app,"Operation System","Operation System","Sistema operacional"
+app,Opportunities,Oportunidades,Oportunidades
+app,Opportunity,Oportunidad,Oportunidade
+app,"Opportunity Data","Opportunity Data","Dados da oportunidade"
+app,"Opportunity not found.","Opportunity not found.","Oportunidade não encontrada."
+app,"Original not found.","Original not found.","Original não encontrado."
+app,"Our Courses","Our Courses","Nossos cursos"
+app,"Our Features","Our Features","Nossas funcionalidades"
+app,"Our founding","Our founding","Nossa fundação"
+app,"Our Institution","Our Institution","Nossa instituição"
+app,"Our Instructors","Our Instructors","Nossos instrutores"
+app,"Our Services","Our Services","Nossos serviços"
+app,Overview,"Resumen general","Visão geral"
+app,"Page Files","Page Files","Arquivos da página"
+app,"Page ID","Page ID","ID da página"
+app,"Page metadata","Page metadata","Metadados da página"
+app,"Page not found.","Page not found.","Página não encontrada."
+app,"Page not found or inactive.","Page not found or inactive.","Página não encontrada ou inativa."
+app,"Page Section","Page Section","Seção da página"
+app,"Page Sections","Page Sections","Seções da página"
+app,"Page URL","Page URL","URL da página"
+app,Parent,Padre,Pai
+app,"Parent Group","Parent Group","Grupo pai"
+app,"Parent ID","Parent ID","ID pai"
+app,"Parent Model","Parent Model","Model pai"
+app,"Password Hash","Password Hash","Hash da senha"
+app,"Password is required.","Password is required.","Senha é obrigatória."
+app,"Password Reset Token","Password Reset Token","Token de redefinição de senha"
+app,"Passwords do not match.","Passwords do not match.","As senhas não coincidem."
+app,Path,Ruta,Caminho
+app,"Path Thumb","Path Thumb","Caminho do thumbnail"
+app,Photo,Photo,Foto
+app,"PHP Models","PHP Models","Models PHP"
+app,"Please delete {n} character(s)","Please delete {n} character(s)","Exclua {n} caractere(s)"
+app,"Please do not reply to this email. This mailbox is not monitored and you will not receive a response.","Please do not reply to this email. This mailbox is not monitored and you will not receive a response.","Por favor, não responda a este e-mail. Esta caixa não é monitorada."
+app,"Please enter a valid email address.","Please enter a valid email address.","Por favor, informe um e-mail válido."
+app,"Please enter a valid phone number.","Please enter a valid phone number.","Por favor, informe um telefone válido."
+app,"Please enter {n} or more characters","Please enter {n} or more characters","Digite {n} ou mais caracteres"
+app,"Please fill out your email. A verification email will be sent there.","Please fill out your email. A verification email will be sent there.","Preencha seu e-mail. Um e-mail de verificação será enviado."
+app,"Please select a city.","Please select a city.","Por favor, selecione uma cidade."
+app,"Please select a state.","Please select a state.","Por favor, selecione um estado."
+app,"Please select a subject.","Please select a subject.","Por favor, selecione um assunto."
+app,Port,Puerto,Porta
+app,"Post Data","Post Data","Dados do post"
+app,"Post Files","Post Files","Arquivos do post"
+app,"Post metadata","Post MetaData","Metadados do post"
+app,"Post MetaData","Metadatos del post","Metadados do post"
+app,Preview,Previsualizar,Pré-visualizar
+app,"Preview Template","Preview Template","Pré-visualizar modelo"
+app,Previous,Anterior,Anterior
+app,Processing...,Processing...,Processando...
+app,"Processing and uploading image...","Processing and uploading image...","Processando e enviando imagem..."
+app,"Profile Metadata","Profile Metadata","Metadados do perfil"
+app,Promotional:,Promotional:,Promocional:
+app,Public,Public,Público
+app,"Read more","Read more","Leia mais"
+app,"Read more →","Read more →","Leia mais →"
+app,"Read our story","Read our story","Leia nossa história"
+app,Reason,Reason,Motivo
+app,Recalled,Recalled,Revogado
+app,Recipient,Recipient,Destinatário
+app,"Recipient Type","Recipient Type","Tipo de destinatário"
+app,Record,Record,Registro
+app,"Record created successfully.","Record created successfully.","Registro criado com sucesso."
+app,"Record deleted successfully.","Record deleted successfully.","Registro excluído com sucesso."
+app,"Record #{id}","Record #{id}","Registro #{id}"
+app,"Record not found","Record not found","Registro não encontrado"
+app,"Record updated successfully.","Record updated successfully.","Registro atualizado com sucesso."
+app,Register,Register,Registrar
+app,"Registration Link","Registration Link","Link de inscrição"
+app,"Related Course","Related Course","Curso relacionado"
+app,"Related Courses","Related Courses","Cursos relacionados"
+app,"Removal completed for group {id}.","Removal completed for group {id}.","Remoção concluída para o grupo {id}."
+app,Remove,Eliminar,Remover
+app,"Remove all items","Remove all items","Remover todos os itens"
+app,"Remove file?","Remove file?","Remover arquivo?"
+app,"Repeat the password for confirmation.","Repeat the password for confirmation.","Repita a senha para confirmação."
+app,"Report Template","Report Template","Modelo de relatório"
+app,"Report Templates","Report Templates","Modelos de relatório"
+app,Research,Research,Pesquisa
+app,"Research not found.","Research not found.","Pesquisa não encontrada."
+app,"Response Data","Response Data","Dados da resposta"
+app,Responsible,Responsible,Responsável
+app,Result,Result,Resultado
+app,Revert,Revert,Reverter
+app,"Revert ""{n}""? This may break data integrity.","Revert ""{n}""? This may break data integrity.","Reverter ""{n}""? Isso pode quebrar a integridade dos dados."
+app,Role,Role,Perfil
+app,Roles,Roles,Perfis
+app,"Roles Templates","Roles Templates","Modelos de perfis"
+app,"Role Template","Role Template","Modelo de perfil"
+app,"Role Templates","Role Templates","Modelos de perfis"
+app,Root,Raíz,Raiz
+app,Salary,Salario,Salário
+app,"Save Footer","Save Footer","Salvar rodapé"
+app,"Save Navbar","Save Navbar","Salvar navbar"
+app,"Save Template","Save Template","Salvar modelo"
+app,Schedule:,Schedule:,Horário:
+app,Scheme,Esquema,Esquema
+app,"Script SQL","Script SQL","Script SQL"
+app,Search...,Search...,Buscar...
+app,"Searching for:","Searching for:","Buscando por:"
+app,"Search username…","Search username…","Buscar usuário…"
+app,"Section (Courses)","Section (Courses)","Seção (Cursos)"
+app,"Section (fixed: Page)","Section (fixed: Page)","Seção (fixo: Página)"
+app,Select,Seleccionar,Selecionar
+app,Select...,Select...,Selecionar...
+app,"Select a city","Select a city","Selecionar cidade"
+app,"Select a controller","Select a controller","Selecionar um controller"
+app,"Select All","Select All","Selecionar tudo"
+app,"-- Select a Model --","-- Select a Model --","-- Selecionar um model --"
+app,"Select a parent group","Select a parent group","Selecionar grupo pai"
+app,"-- select a section --","-- select a section --","-- selecionar uma seção --"
+app,"Select a state","Select a state","Selecionar estado"
+app,"Select a state first","Select a state first","Selecione um estado primeiro"
+app,"Select a subject","Select a subject","Selecionar assunto"
+app,"Select a Theme","Select a Theme","Selecionar tema"
+app,"Select Banner Image","Select Banner Image","Selecionar imagem do banner"
+app,"Select Document","Select Document","Selecionar documento"
+app,"Selected actions","Selected actions","Ações selecionadas"
+app,"Select Fallback Image","Select Fallback Image","Selecionar imagem substituta"
+app,"-- Select Folder --","-- Select Folder --","-- Selecionar pasta --"
+app,"-- Select icon --","-- Select icon --","-- Selecionar ícone --"
+app,"Select Image","Select Image","Selecionar imagem"
+app,"Select Language","Select Language","Selecionar idioma"
+app,"Select Menu","Select Menu","Selecionar menu"
+app,"Select Section","Select Section","Selecionar seção"
+app,"Select tags...","Select tags...","Selecionar tags..."
+app,"Select Target Language","Select Target Language","Selecionar idioma de destino"
+app,"Select Video","Select Video","Selecionar vídeo"
+app,"Send Email","Send Email","Enviar e-mail"
+app,"Send Message","Send Message","Enviar mensagem"
+app,"Send us a message with your questions, feedback or suggestions!","Send us a message with your questions, feedback or suggestions!","Envie-nos uma mensagem com suas dúvidas, comentários ou sugestões!"
+app,"Server Heath","Server Heath","Saúde do servidor"
+app,Shift,Shift,Turno
+app,"Short courses, workshops and continuing education","Short courses, workshops and continuing education","Cursos curtos, workshops e educação continuada"
+app,Show,Mostrar,Mostrar
+app,"Show in Form","Show in Form","Mostrar no formulário"
+app,"Show in Grid","Show in Grid","Mostrar na grade"
+app,"Show in lists","Show in lists","Mostrar em listas"
+app,"Show in Search","Show in Search","Mostrar na busca"
+app,"Show in View","Show in View","Mostrar na visualização"
+app,"Side Widget","Side Widget","Widget lateral"
+app,"Site Language","Site Language","Idioma do site"
+app,Skipped,Omitido,Ignorado
+app,Slogan,Eslogan,Slogan
+app,Slug,Slug,Slug
+app,"Sorry, we are unable to resend verification email for the provided email address.","Sorry, we are unable to resend verification email for the provided email address.","Desculpe, não foi possível reenviar o e-mail de verificação."
+app,"Sorry, we are unable to reset password for the provided email address.","Sorry, we are unable to reset password for the provided email address.","Desculpe, não foi possível redefinir a senha para o endereço fornecido."
+app,"Sorry, we are unable to verify your account with provided token.","Sorry, we are unable to verify your account with provided token.","Desculpe, não foi possível verificar sua conta com o token fornecido."
+app,Start,Start,Início
+app,"Start Date","Start Date","Data de início"
+app,"State ID","State ID","ID do estado"
+app,"Storage Manager","Storage Manager","Gerenciador de armazenamento"
+app,"Storage service is temporarily unavailable.","Storage service is temporarily unavailable.","O serviço de armazenamento está temporariamente indisponível."
+app,"Student Profile","Student Profile","Perfil do estudante"
+app,Success,Éxito,Sucesso
+app,"Suggest tags","Suggest tags","Sugerir tags"
+app,"SysMenu for {route} successfully created.","SysMenu for {route} successfully created.","SysMenu para {route} criado com sucesso."
+app,Tag,Tag,Tag
+app,"Tag ID","Tag ID","ID da tag"
+app,Tags,Tags,Tags
+app,"Target language must be provided.","Target language must be provided.","O idioma de destino deve ser fornecido."
+app,"Tax ID","Tax ID",CNPJ
+app,"Template ID","Template ID","ID do modelo"
+app,"Template Name","Template Name","Nome do modelo"
+app,"Templates successfully applied for group {id} ({level}).","Templates successfully applied for group {id} ({level}).","Modelos aplicados com sucesso para o grupo {id} ({level})."
+app,Textarea,Textarea,"Área de texto"
+app,"The field ""{attr}"" is required.","The field ""{attr}"" is required.","O campo ""{attr}"" é obrigatório."
+app,"The limit of concurrent users for this license has been reached.","The limit of concurrent users for this license has been reached.","O limite de usuários simultâneos para esta licença foi atingido."
+app,Theme,Theme,Tema
+app,"Theme cloned successfully.","Theme cloned successfully.","Tema clonado com sucesso."
+app,"Theme Name","Theme Name","Nome do tema"
+app,"The requested record does not exist.","The requested record does not exist.","O registro solicitado não existe."
+app,"The results could not be loaded.","The results could not be loaded.","Os resultados não puderam ser carregados."
+app,"This action will unlink the current file.","This action will unlink the current file.","Esta ação desvinculará o arquivo atual."
+app,"This action will unlink this file.","This action will unlink this file.","Esta ação desvinculará este arquivo."
+app,"This name is already in use.","This name is already in use.","Este nome já está em uso."
+app,"This record must remain in the Courses section or its sub-sections.","This record must remain in the Courses section or its sub-sections.","Este registro deve permanecer na seção Cursos ou suas subseções."
+app,"This record must remain in the Extensions section or its sub-sections.","This record must remain in the Extensions section or its sub-sections.","Este registro deve permanecer na seção Extensão ou suas subseções."
+app,"This record must remain in the Infrastructure section or its sub-sections.","This record must remain in the Infrastructure section or its sub-sections.","Este registro deve permanecer na seção Infraestrutura ou suas subseções."
+app,"This record must remain in the Institutions section or its sub-sections.","This record must remain in the Institutions section or its sub-sections.","Este registro deve permanecer na seção Instituições ou suas subseções."
+app,"This record must remain in the Page section.","This record must remain in the Page section.","Este registro deve permanecer na seção Página."
+app,"This record must remain in the Research section or its sub-sections.","This record must remain in the Research section or its sub-sections.","Este registro deve permanecer na seção Pesquisa ou suas subseções."
+app,"This slug is already in use.","This slug is already in use.","Este slug já está em uso."
+app,"This tag is already linked to this page.","This tag is already linked to this page.","Esta tag já está vinculada a esta página."
+app,"This will remove all roles from this group. Proceed?","This will remove all roles from this group. Proceed?","Isso removerá todos os perfis deste grupo. Prosseguir?"
+app,Thumbnail,Thumbnail,Miniatura
+app,TinyMCE,TinyMCE,TinyMCE
+app,To,To,Para
+app,"Toggle navigation","Toggle navigation","Alternar navegação"
+app,"Toggle theme","Toggle theme","Alternar tema"
+app,"Toggle theme (auto)","Toggle theme (auto)","Alternar tema (automático)"
+app,"Token Validate","Token Validate","Validar token"
+app,"Total Access","Total Access","Total de acessos"
+app,"Total clone created (new group).","Total clone created (new group).","Clone total criado (novo grupo)."
+app,Transferred,Transferred,Transferido
+app,Translatable,Traducible,Traduzível
+app,"Translated record created successfully.","Translated record created successfully.","Registro traduzido criado com sucesso."
+app,"Translate the following text to {0}. Preserve original formatting.","Translate the following text to {0}. Preserve original formatting.","Traduza o seguinte texto para {0}. Preserve a formatação original."
+app,Translation,Traducción,Tradução
+app,"Translation failed: {errors}","Translation failed: {errors}","Falha na tradução: {errors}"
+app,Triggers,Disparadores,Gatilhos
+app,Twitter,Twitter,Twitter
+app,"Type to search...","Type to search...","Digite para buscar..."
+app,"Uncheck this in Dynamic mode if you want to use the inherited views from FormResponseController.","Uncheck this in Dynamic mode if you want to use the inherited views from FormResponseController.","Desmarque no modo Dinâmico se quiser usar as views herdadas do FormResponseController."
+app,"Unexpected error while deleting.","Unexpected error while deleting.","Erro inesperado ao excluir."
+app,Unknown,Desconocido,Desconhecido
+app,Unnamed,Sin nombre,"Sem nome"
+app,"Unselect All","Unselect All","Desmarcar tudo"
+app,"Update Access Log: {name}","Update Access Log: {name}","Atualizar log de acesso: {name}"
+app,"Update Banner: {name}","Update Banner: {name}","Atualizar banner: {name}"
+app,"Update Client: {name}","Update Client: {name}","Atualizar cliente: {name}"
+app,"Update Configuration: {name}","Update Configuration: {name}","Atualizar configuração: {name}"
+app,"Update Dynamic Form: {name}","Update Dynamic Form: {name}","Atualizar formulário dinâmico: {name}"
+app,"Update Dynamic Widget: {name}","Update Dynamic Widget: {name}","Atualizar widget dinâmico: {name}"
+app,"Update Email Service: {name}","Update Email Service: {name}","Atualizar serviço de e-mail: {name}"
+app,"Update Enrollment","Update Enrollment","Atualizar inscrição"
+app,"Update File: {name}","Update File: {name}","Atualizar arquivo: {name}"
+app,"Update Folder: {name}","Update Folder: {name}","Atualizar pasta: {name}"
+app,"Update Form Field: {name}","Update Form Field: {name}","Atualizar campo de formulário: {name}"
+app,"Update Group: {name}","Update Group: {name}","Atualizar grupo: {name}"
+app,"Update #{id}","Update #{id}","Atualizar #{id}"
+app,"Update Instructor","Update Instructor","Atualizar instrutor"
+app,"Update Language: {name}","Update Language: {name}","Atualizar idioma: {name}"
+app,"Update License: {name}","Update License: {name}","Atualizar licença: {name}"
+app,"Update License Type: {name}","Update License Type: {name}","Atualizar tipo de licença: {name}"
+app,"Update Log: {name}","Update Log: {name}","Atualizar log: {name}"
+app,"Update Menu: {name}","Update Menu: {name}","Atualizar menu: {name}"
+app,"Update {name}","Update {name}","Atualizar {name}"
+app,"Update Opportunity","Update Opportunity","Atualizar oportunidade"
+app,"Update Report Template: {name}","Update Report Template: {name}","Atualizar modelo de relatório: {name}"
+app,"Update Role: {name}","Update Role: {name}","Atualizar perfil: {name}"
+app,"Update Roles Template: {name}","Update Roles Template: {name}","Atualizar modelo de perfis: {name}"
+app,"Update Section: {name}","Update Section: {name}","Atualizar seção: {name}"
+app,"Update Source Message: {name}","Update Source Message: {name}","Atualizar mensagem de origem: {name}"
+app,"Update Tag: {name}","Update Tag: {name}","Atualizar tag: {name}"
+app,"Update Trigger","Update Trigger","Atualizar gatilho"
+app,"Update User: {name}","Update User: {name}","Atualizar usuário: {name}"
+app,"Update Venue","Update Venue","Atualizar local"
+app,Uploading...,Uploading...,Enviando...
+app,Url,Url,URL
+app,"Url Thumb","Url Thumb","URL do thumbnail"
+app,"User created successfully.","User created successfully.","Usuário criado com sucesso."
+app,"User has no base group assigned.","User has no base group assigned.","Usuário sem grupo base definido."
+app,"User ID","User ID","ID do usuário"
+app,"User: #{id} - {name}","User: #{id} - {name}","Usuário: #{id} - {name}"
+app,"User is guest","User is guest","Usuário é visitante"
+app,Username,"Nombre de usuario","Nome de usuário"
+app,"User Profile","User Profile","Perfil do usuário"
+app,UserProfile,UserProfile,"Perfil do usuário"
+app,"User Profiles","User Profiles","Perfis de usuário"
+app,"User removed.","User removed.","Usuário removido."
+app,"User updated successfully.","User updated successfully.","Usuário atualizado com sucesso."
+app,Vacancies,vacancies,vagas
+app,vacancies,vacantes,vagas
+app,Validate,Validate,Validar
+app,"Validation error.","Validation error.","Erro de validação."
+app,Value,Valor,Valor
+app,Venue,Lugar,Local
+app,"Venue Data","Datos del lugar","Dados do local"
+app,Venues,Lugares,Locais
+app,"View all courses","Ver todos los cursos","Ver todos os cursos"
+app,"View Document","Ver documento","Visualizar documento"
+app,"View Generation Mode","Modo de generación de vistas","Modo de geração de views"
+app,"View Image","Ver imagen","Visualizar imagem"
+app,"Visual Editor","Editor visual","Editor visual"
+app,Waiting,Esperando,Aguardando
+app,"We want to hear from you!","¡Queremos escucharlo!","Queremos ouvir você!"
+app,"Website Issues","Problemas del sitio web","Problemas no site"
+app,Workload,"Carga horaria","Carga horária"
+app,"Wrong postal code format.","Formato de código postal incorrecto.","Formato de CEP inválido."
+app,"Yes, remove!","¡Sí, eliminar!","Sim, remover!"
+app,"You are not allowed to access this user.","No tienes permiso para acceder a este usuario.","Você não tem permissão para acessar este usuário."
+app,"You are not allowed to send to all users (global).","No tienes permiso para enviar a todos los usuarios (global).","Você não tem permissão para enviar para todos os usuários (global)."
+app,"You can only select {n} item(s)","Solo puede seleccionar {n} elemento(s)","Você pode selecionar apenas {n} item(ns)"
+app,"Your browser does not support the video tag.","Su navegador no admite la etiqueta de video.","Seu navegador não suporta o elemento de vídeo."
+app,"Your email has been confirmed!","¡Tu correo electrónico ha sido confirmado!","Seu e-mail foi confirmado!"
+app,YouTube,YouTube,YouTube
+app,"Add Roles","Agregar roles","Adicionar perfis"
+app,"Automatic Translation Settings (i18n)","Configuración de Traducción Automática (i18n)","Configurações de Tradução Automática (i18n)"
+app,Settings,Configuración,Configurações
+app,"This application synchronizes local dictionaries with the <strong>Central Translation API</strong>. The process runs automatically every hour via cron, but you can force or reconfigure it here.","Esta aplicación sincroniza los diccionarios locales com a <strong>API Central de Traducciones</strong>. El proceso es automático a cada hora vía cron, pero puede forzar o reconfigurarlo aquí.","Esta aplicação sincroniza os dicionários locais com a <strong>API Central de Traduções</strong>. O processo é automático a cada 1 hora via cron, mas você pode forçar ou reconfigurar aqui."
+app,Checking...,Verificando...,Verificando...
+app,"Endpoint Configuration","Configuración de Punto Final","Configuração de Endpoint"
+app,"Central API URL","URL de la API Central","URL da API Central"
+app,"Authentication Token (Bearer)","Token de Autenticación (Bearer)","Token de Autenticação (Bearer)"
+app,"Secret Token","Token Secreto","Token Secreto"
+app,"Test Connection","Probar Conexión","Testar Conexão"
+app,"Login to Central API","Iniciar sesión en la API Central","Logar na API Central"
+app,"Manual Commands","Comandos Manuales","Comandos Manuais"
+app,"You can run the sync right now via terminal or by clicking the button below:","Puede ejecutar la sincronización ahora mismo a través del terminal o haciendo clic en el botón de abajo:","Você pode rodar a sincronização agora mesmo via terminal ou clicando no botão abaixo:"
+app,"Sync Local Database Now","Sincronizar Base de Datos Local Ahora","Sincronizar Banco Local Agora"
+app,"Central Authentication","Autenticación Central","Autenticação Central"
+app,"Get New Token","Obtener Nuevo Token","Obter Novo Token"
+app,Syncing...,Sincronizando...,Sincronizando...
+app,Authenticating...,Autenticando...,Autenticando...
+app,"Unexpected error. Check the console.","Error inesperado. Verifique la consola.","Erro inesperado. Verifique o console."
+app,"Sync completed. {source} new sources, {trans} translations updated.","Sincronización completada. {source} nuevas fuentes, {trans} traducciones actualizadas.","Sincronização concluída. {source} fontes novas, {trans} traduções atualizadas."
