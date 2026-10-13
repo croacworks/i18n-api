@@ -1,5 +1,12 @@
 # Changelog
 
+## Token persistence fix — 2026-10-12
+
+- Restored persistent user login tokens by default so the manager and integrated applications are
+  not disconnected every 24 hours. Token expiration remains available by explicitly configuring
+  `I18N_TOKEN_TTL`.
+- Existing correctly signed user tokens remain valid when expiration is not configured.
+
 ## CoreUI manager, import and database maintenance — 2026-10-07
 
 - Replaced the custom manager screen with a local CoreUI Bootstrap interface.

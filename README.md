@@ -303,8 +303,9 @@ docker compose exec api php user.php --delete admin
 
 The `token.php` script manages the master API token stored in `.env`.
 
-User login tokens expire after 24 hours by default. Set `I18N_TOKEN_TTL` in `.env` to customize
-the lifetime in seconds; accepted values are clamped between five minutes and thirty days.
+User login tokens are persistent by default so tokens saved by client applications are not
+invalidated unexpectedly. To enforce expiration, set `I18N_TOKEN_TTL` in `.env` to the desired
+lifetime in seconds; configured values are clamped between five minutes and thirty days.
 
 ```bash
 # Show current token

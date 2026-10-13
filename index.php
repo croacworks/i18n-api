@@ -370,15 +370,17 @@ function updateApplication(PDO $pdo, string $baseDir): array
 
 function createUserToken(array $user, string $apiToken): string
 {
-    $ttl = (int) (getenv('I18N_TOKEN_TTL') ?: 86400);
-    $ttl = max(300, min($ttl, 2592000));
     $payload = [
         'sub' => (int) $user['id'],
         'username' => $user['username'],
         'role' => $user['role'],
         'iat' => time(),
-        'exp' => time() + $ttl,
     ];
+    $configuredTtl = trim((string) (getenv('I18N_TOKEN_TTL') ?: ''));
+    if ($configuredTtl !== '') {
+        $ttl = max(300, min((int) $configuredTtl, 2592000));
+        $payload['exp'] = time() + $ttl;
+    }
     $payloadB64 = rtrim(strtr(base64_encode((string) json_encode($payload)), '+/', '-_'), '=');
     $signature = hash_hmac('sha256', $payloadB64, $apiToken);
     return $payloadB64 . '.' . $signature;
@@ -396,7 +398,11 @@ function parseUserToken(string $token, string $apiToken, PDO $pdo): ?array
     }
     $payloadJson = base64_decode(strtr($payloadB64, '-_', '+/'), true);
     $payload = $payloadJson === false ? null : json_decode($payloadJson, true);
-    if (!is_array($payload) || empty($payload['sub']) || empty($payload['exp']) || $payload['exp'] < time()) {
+    if (!is_array($payload) || empty($payload['sub'])) {
+        return null;
+    }
+    $configuredTtl = trim((string) (getenv('I18N_TOKEN_TTL') ?: ''));
+    if ($configuredTtl !== '' && (empty($payload['exp']) || (int) $payload['exp'] < time())) {
         return null;
     }
 
@@ -411,7 +417,7 @@ function parseUserToken(string $token, string $apiToken, PDO $pdo): ?array
         'sub' => (int) $user['id'],
         'username' => $user['username'],
         'role' => $user['role'],
-        'exp' => (int) $payload['exp'],
+        'exp' => isset($payload['exp']) ? (int) $payload['exp'] : null,
     ];
 }
 
