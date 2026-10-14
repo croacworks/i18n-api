@@ -1,5 +1,10 @@
 # Changelog
 
+## Translation form guidance — 2026-10-14
+
+- Clarified that the selected language is the translation target and that LibreTranslate detects the source language automatically.
+- Restored alternative translations as clickable suggestions that fill the translation field.
+
 ## Token persistence fix — 2026-10-12
 
 - Restored persistent user login tokens by default so the manager and integrated applications are
