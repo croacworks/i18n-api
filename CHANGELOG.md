@@ -1,5 +1,11 @@
 # Changelog
 
+## Translation form selectors and key lookup — 2026-10-14
+
+- Added a searchable category selector that can create a new category.
+- Restricted target language selection to languages already present in the catalog.
+- Added live exact-key lookup with selectable existing category matches.
+
 ## Translation form guidance — 2026-10-14
 
 - Clarified that the selected language is the translation target and that LibreTranslate detects the source language automatically.
